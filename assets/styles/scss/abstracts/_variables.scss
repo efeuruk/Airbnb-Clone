@@ -1,0 +1,36 @@
+// Color
+$primary: #ff5a5f;
+$secondary: #ffffff;
+/*
+inputlardaki olay değiştirirken verdiğimiz yeşil
+$secondary: #008489;
+*/
+$tundora: #484848;
+$teal: #008489;
+$cannon-pink: #914669;
+$boulder: #767676;
+
+$input-focus-box-shadow: none;
+
+// Grids
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1600px
+);
+
+// Cardların arasındaki marginleri değiştirmek için yaptım
+$grid-gutter-width: 15px;
+
+

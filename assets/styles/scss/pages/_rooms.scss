@@ -1,0 +1,106 @@
+.row-custom {
+    display: flex;
+    i {
+        font-size: 14px;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+    div {
+        p {
+            font-weight: 400;
+            color: $tundora;
+        }
+    }
+}
+
+.paragraph-info {
+    font-weight: 400;
+    color: $tundora;
+    margin-top: 40px;
+}
+
+.show, .hide {
+    a {
+        font-size: 1.1rem;
+    }
+}
+
+.section-overview {
+    h5 {
+        font-size: 1rem;
+    }
+    .row-profile-pic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        a {
+            color: $tundora;
+        }
+
+        .profile-pic-container {
+            width: 48px;
+            position: relative;
+            img {
+                width: 100%;
+                border-radius: 100px;
+            }
+            div {
+                width: 15px;
+                position: absolute;
+                top: 25px;
+                left: 35px;
+            }
+            .pp-name {
+                position: absolute;
+                top: 60px;
+                right: 0px;
+                display: none;
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .container-amenities {
+        img {
+            margin-right: 5px;
+            margin-top: -15px;
+        }
+
+        p {
+            color: $boulder;
+            font-size: 18px;
+        }
+    }
+
+    .bedroom-container {
+        width: 200px;
+        height: 145px;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 4px;
+        .bedroom {
+            padding: 20px;
+            img {
+                margin-bottom: 20px;
+            }
+            h5 {
+                font-weight: 00;
+            }
+        }
+    }
+
+    .calender {
+        height: 300px;
+        background-color: black;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .section-overview {
+        .hide-element {
+            visibility: hidden;
+        }
+    }
+}

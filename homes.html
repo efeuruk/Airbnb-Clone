@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homes</title>
+    <link rel="stylesheet" href="assets/styles/scss/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!--Header-->
+   <header class="header-index header-homes sticky-header">
+        <nav class="container-fluid nav-main navbar navbar-expand-xl">
+            <div class="col-md-4">
+                <div class="row d-flex justify-content-md-start flex-nowrap">
+                    <a class="navbar-brand pt-2" href="#">
+                        <img src="./assets/img/homepage/svgs/airbnb-logo-red.svg" alt="red-logo" width="40px">
+                    </a>
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation"
+                    onclick="toggleNavbar()">
+                        <span class="ml-n5">
+                            <img class="mb-3" src="./assets/img/homepage/svgs/down-arrow-gray.svg" alt="toggle" width="10px">
+                        </span>
+                    </button>
+                    <!--Search Bar-->
+                    <form action="#">
+                        <div class="form-group container-searchbar">
+                            <label class="search-bar-label" for="search">
+                                <img src="./assets/img/homepage/svgs/search-icon.svg" alt="search-icon" width="20px">
+                                Anywhere · Stays
+                            </label>
+                            <input type="text" 
+                            class="form-control mt-2 shadow search-bar" placeholder="Search" 
+                            aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8 d-flex justify-content-md-end">
+                <div class="row">
+                    <div class="navbar-collapse collapse">
+                        <ul class="navbar-nav ul-main pt-3 navbar-secondary">
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    <img class="mr-1" src="./assets/img/homepage/svgs/world-gray.svg" alt="world" width="10px">
+                                    English (GB)
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    &pound; GBP
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    Become a host
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    Help
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    Sign up
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Log in
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-content overlay container-section">
+                        <a href="javascript:void(0)" class="closebtn" onclick="toggleNavbar()">
+                            <img class="mt-3" src="./assets/img/homepage/svgs/airbnb-logo-red.svg" alt="airbnb-logo-red" width="40px">
+                            <!--Toggle Simgesi gelecek-->
+                        </a>
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <ul class="nav flex-column">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <span><hr></span>
+                                <li>
+                                    <a href="#">Download the App</a>
+                                </li>
+                                <li>
+                                    <a href="#">Invite friends </a>
+                                </li>
+                                <li>
+                                    <a href="#">Refer hosts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Airbnb for Work</a>
+                                </li>
+                                <span><hr></span>
+                                <li class="d-flex justify-content-between">
+                                    <a href="#">
+                                        Language
+                                        <span>English (GB)</span>
+                                    </a>
+                                    <img src="./assets/img/homepage/svgs/world-black.svg" alt="world-black" width="25px">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Currency
+                                        <span>&pound; GBP</span>
+                                    </a>
+                                </li>
+                                <span><hr></span>
+                                <li class="d-flex justify-content-between">
+                                    <a href="#">
+                                        List your place
+                                        <span>
+                                            Earn up to strong
+                                            <strong>&pound;614 a month</strong>
+                                        </span>
+                                    </a>
+                                    <img src="./assets/img/homepage/svgs/home.svg" alt="home" width="44px">
+                                </li>
+                                <li>
+                                    <a href="#">Learn about hosting your home</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Host an experience
+                                        <span>Earn money during what you love</span>
+                                    </a>
+                                </li>
+                                <span><hr></span>
+                                <li>
+                                    <a href="#">Help</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sign up</a>
+                                </li>
+                                <li>
+                                    <a href="#">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <hr class="mt-n1">
+            <ul class="container-fluid nav list-filter">
+                <li>
+                    <a href="#" class="button-filter">Dates</a>
+                </li>
+                <li>
+                    <a href="#" class="button-filter">Guests</a>
+                </li>
+                <li>
+                    <a href="#" class="button-filter">More Filters</a>
+                </li>
+            </ul>
+        <hr>
+
+        <div class="terms">
+            <span class="shadow">
+                <img class="mr-2" src="./assets/img/homepage/svgs/info.svg" alt="info" width="20px">
+                Terms, Privacy & More
+            </span>
+        </div>
+   </header>
+   <main>
+        <article>   
+        <section class="container-section">
+            <p class="text-muted mt-3">Enter dates and number of guests to see the total price per night.</p>
+            <hr>
+        </section>
+        
+        <section class="section-travel container-section">
+            <h2 class="title tundora mb-4">Travel the world with Airbnb</h2>
+                <div class="card-deck container-card-explore scrollable-card">
+                    <div class="card shadow card-explore card-travel">
+                        <div class="container-card-image">
+                            <img src="./assets/img/homes/travel/paris.jpg" class="card-img-top" alt="paris">
+                        </div>
+                        <div class="card-body card-body-explore card-body-travel">
+                            <h5 class="h6 card-title">Paris<h5>
+                            <p class="text-muted card-text">France</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="card shadow card-explore card-travel">
+                        <div class="container-card-image">
+                            <img src="./assets/img/homes/travel/new-york.jpg" class="card-img-top" alt="new-york">
+                        </div>
+                        <div class="card-body card-body-explore card-body-travel">
+                            <h5 class="h6 card-title">New York<h5>
+                            <p class="text-muted card-text">United States</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="card shadow card-explore card-travel">
+                        <div class="container-card-image">
+                            <img src="./assets/img/homes/travel/syndey.jpg" class="card-img-top" alt="sydney">
+                        </div>
+                        <div class="card-body card-body-explore card-body-travel">
+                            <h5 class="h6 card-title">Sydney<h5>
+                            <p class="text-muted card-text">Australia</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="card shadow card-explore card-travel">
+                        <div class="container-card-image">
+                            <img src="./assets/img/homes/travel/cape-town.jpg" class="card-img-top" alt="cape-town">
+                        </div>
+                        <div class="card-body card-body-explore card-body-travel">
+                            <h5 class="h6 card-title">Cape Town<h5>
+                            <p class="text-muted card-text">South Africa</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="card shadow card-explore card-travel">
+                        <div class="container-card-image">
+                            <img src="./assets/img/homes/travel/buenos-aires.jpg" class="card-img-top" alt="buenos-aires">
+                        </div>
+                        <div class="card-body card-body-explore card-body-travel">
+                            <h5 class="h6 card-title">Buenos Aires<h5>
+                            <p class="text-muted card-text">Argentina</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="card shadow card-explore card-travel">
+                        <div class="container-card-image">
+                            <img src="./assets/img/homes/travel/seoul.jpg" class="card-img-top" alt="seoul">
+                        </div>
+                        <div class="card-body card-body-explore card-body-travel">
+                            <h5 class="h6 card-title">Seoul<h5>
+                            <p class="text-muted card-text">South Korea</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="card shadow card-explore card-travel">
+                        <div class="container-card-image">
+                            <img src="./assets/img/homes/travel/barcelona.jpg" class="card-img-top" alt="barcelona">
+                        </div>
+                        <div class="card-body card-body-explore card-body-travel">
+                            <h5 class="h6 card-title">Barcelona<h5>
+                            <p class="text-muted card-text">Spain</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="card shadow card-explore card-travel">
+                        <div class="container-card-image">
+                            <img src="./assets/img/homes/travel/los-angeles.jpg" class="card-img-top" alt="los-angeles">
+                        </div>
+                        <div class="card-body card-body-explore card-body-travel">
+                            <h5 class="h6 card-title">Los Angeles<h5>
+                            <p class="text-muted card-text">United States</p>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                    
+                </div>
+        </section>
+        
+        <section class="section-stay container-section">
+
+        </section>
+
+        <footer class="container-footer">
+                <div class="row justify-content-between">
+                    <ul class="nav flex-column">
+                        <li class="nav-item footer-title">
+                            Airbnb
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Policies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Diversity & Belonging</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Accessibility
+                                <span class="new">New</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Company Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">UK Modern Slavery Act</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="nav flex-column">
+                        <li class="nav-item footer-title">
+                            Discover
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trust & Safety</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Travel Credit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Airbnb Citizen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Business Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Things To Do
+                                <span class="new">New</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Airbnbmag</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="nav flex-column">
+                        <li class="nav-item footer-title">
+                            Hosting
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Why Host</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hospitality</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Responsible Hosting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community Centre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Host an Experience
+                                <span class="new">New</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Open Homes</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="nav flex-column container-social">
+                        <li class="nav-item social-list">
+                            <a class="social-link" href="#">
+                                <img src="./assets/img/homepage/footer/facebook.svg" alt="facebook" width="25px">
+                            </a>
+                            <a class="social-link" href="#">
+                                <img src="./assets/img/homepage/footer/twitter.svg" alt="twitter" width="25px">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/homepage/footer/instagram.svg" alt="instagram" width="25px">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Site Map</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="row">
+                    <img src="./assets/img/homepage/footer/logo.svg" alt="" width="25px">
+                    <span class="ml-2 copyright">© 2019 Airbnb, Inc. All rights reserved.</span>
+                </div>
+            </footer>
+        
+    </article>
+   </main>
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="./assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+// Mobile
+.main-link, .secondary-link {
+    display: block;
+    border: 1px solid $teal;
+    color: $teal;
+    border-radius: 6px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 800;
+
+    &:hover {
+        color: $teal;
+        text-decoration: none;
+    }
+
+    div {
+        display: none;
+    }
+}
+
+.secondary-link {
+    border-color: rgb(224, 224, 224); 
+    color: $cannon-pink;
+
+    &:hover {
+        color: $cannon-pink;
+    }
+}
+
+.link-advantures {
+    position: relative;
+    i {
+        opacity: 0;
+        transition: opacity 0.5s;
+        position: absolute;
+        top: 20px;
+        left: 550px;
+        color: $tundora;
+    }
+    &:hover {
+        text-decoration: none;
+        i {
+            opacity: 1;
+        }
+    }
+}
+
+.link-collapse {
+    color: $teal;
+    &:hover {
+        color: $teal;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .main-link, .secondary-link {
+        font-size: 1.1rem;
+        display: inline;
+        border: none;
+        padding: 0;
+        &:hover {
+            text-decoration: underline;
+        }
+
+        div {
+            margin-left: 5px;
+            width: 15px;
+            display: inline-block;
+            img {
+               width: 100%;
+            }
+        }
+        
+    }
+}

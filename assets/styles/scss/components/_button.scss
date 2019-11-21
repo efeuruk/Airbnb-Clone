@@ -1,0 +1,39 @@
+.button {
+    font-weight: 700;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    img {
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+}
+
+.button-primary {
+    &:hover {
+        background-color: $primary;
+    }
+}
+
+.button-secondary {
+    color: $tundora;
+
+    &:hover {
+        background-color: $secondary;
+    }
+}
+
+// 2. Sayfadaki filtre buttonları
+.button-filter {
+    color: #222222;
+    border-radius: 30px;
+    border: 1px solid rgb(176, 176, 176);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    &:hover {
+        color: #222222;
+        border-color: #222222;
+        text-decoration: none;
+    }
+}

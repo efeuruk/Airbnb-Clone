@@ -1,0 +1,31 @@
+.container-section {
+    @include make-container(48px);
+   
+    @include media-breakpoint-up(md) {
+      @include make-container(80px);
+    }
+   
+    @include media-breakpoint-up(lg) {
+      @include make-container(150px);
+    }
+
+    @include media-breakpoint-up(xl) {
+      @include make-container(170px);
+    }
+
+    @include media-breakpoint-up(xxl) {
+      @include make-container(200px);
+    }
+}
+
+.container-footer {
+  @include make-container(80px);
+
+  @include media-breakpoint-up(md) {
+    @include make-container(170px);
+  }
+
+  @include media-breakpoint-up(xxl) {
+    @include make-container(490px);
+  }
+}

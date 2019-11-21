@@ -1,0 +1,29 @@
+.ul-main {
+    a {
+        position: relative;
+        padding-bottom: 27px;
+        text-decoration: none;
+        font-weight: 500;
+        color: white;
+        
+        &::after {
+            display: none;
+            content: "";
+            border-bottom: 0.1rem solid white;
+            width: 100%;           
+            position: absolute;
+            left: 0;
+            top: 50px;
+        }
+
+        &:hover{
+            &::after {
+                display: block;
+            } 
+        }
+    }
+
+    // @include media-breakpoint-up(md) {
+
+    // }
+}
