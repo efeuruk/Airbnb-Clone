@@ -42,7 +42,7 @@
   }
 
   @include media-breakpoint-up(xxl) {
-    @include make-container(500px);
+    @include make-container(440px);
   }
 
 }

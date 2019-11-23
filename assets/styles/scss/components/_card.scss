@@ -186,9 +186,9 @@
     margin-top: 20px;
     border-radius: 12px;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.16);
-    
+
+
     .card-review-label {
-        font-size: 18px;
         font-weight: 400;
         color: $tundora;
     }
@@ -215,6 +215,9 @@
 .container-card-dates {
     display: none;
     .card-dates {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
         .card-body-dates {
             .card-dates-rating-container {
                 font-size: 14px;

@@ -9007,8 +9007,8 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
 @media (min-width: 1440px) {
   .container-rooms {
     width: 100%;
-    padding-right: 250px;
-    padding-left: 250px;
+    padding-right: 220px;
+    padding-left: 220px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -9434,9 +9434,22 @@ small {
   color: #484848;
 }
 
+@media (min-width: 768px) {
+  .section-overview .row-profile-pic a {
+    margin-top: -40px;
+  }
+}
+
 .section-overview .row-profile-pic .profile-pic-container {
   width: 48px;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .section-overview .row-profile-pic .profile-pic-container {
+    bottom: 30px;
+    width: 64px;
+  }
 }
 
 .section-overview .row-profile-pic .profile-pic-container img {
@@ -9451,6 +9464,14 @@ small {
   left: 35px;
 }
 
+@media (min-width: 768px) {
+  .section-overview .row-profile-pic .profile-pic-container div {
+    width: 20px;
+    top: 40px;
+    left: 45px;
+  }
+}
+
 .section-overview .row-profile-pic .profile-pic-container .pp-name {
   position: absolute;
   top: 60px;
@@ -9460,6 +9481,8 @@ small {
 
 @media (min-width: 768px) {
   .section-overview .row-profile-pic .profile-pic-container .pp-name {
+    top: 70px;
+    right: 10px;
     display: block;
   }
 }
@@ -9553,8 +9576,8 @@ small {
 }
 
 .section-reviews .comment {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -9857,7 +9880,6 @@ small {
 }
 
 .card-review .card-review-label {
-  font-size: 18px;
   font-weight: 400;
   color: #484848;
 }
@@ -9887,6 +9909,12 @@ small {
 
 .container-card-dates {
   display: none;
+}
+
+.container-card-dates .card-dates {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }
 
 .container-card-dates .card-dates .card-body-dates .card-dates-rating-container {
