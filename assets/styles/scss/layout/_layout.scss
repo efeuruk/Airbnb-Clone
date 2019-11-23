@@ -29,3 +29,20 @@
     @include make-container(490px);
   }
 }
+
+.container-rooms {
+  @include make-container(48px);
+
+  @include media-breakpoint-up(md) {
+    @include make-container(120px);
+  }
+
+  @include media-breakpoint-up(xl) {
+    @include make-container(260px);
+  }
+
+  @include media-breakpoint-up(xxl) {
+    @include make-container(500px);
+  }
+
+}

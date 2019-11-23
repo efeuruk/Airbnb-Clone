@@ -10,283 +10,552 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header class="header-index header-homes">
-                <nav class="container-fluid nav-main navbar navbar-expand-xl">
-                    <div class="col-md-4">
-                        <div class="row d-flex justify-content-md-start flex-nowrap">
-                            <a class="navbar-brand pt-2" href="#">
-                                <img src="./assets/img/homepage/svgs/airbnb-logo-red.svg" alt="red-logo" width="40px">
-                            </a>
-                            <button class="navbar-toggler" type="button" aria-label="Toggle navigation"
-                            onclick="toggleNavbar()">
-                                <span class="ml-n5">
-                                    <img class="mb-3" src="./assets/img/homepage/svgs/down-arrow-gray.svg" alt="toggle" width="10px">
-                                </span>
-                            </button>
-                            <!--Search Bar-->
-                            <form action="#">
-                                <div class="form-group container-searchbar">
-                                    <label class="search-bar-label" for="search">
-                                        <img src="./assets/img/homepage/svgs/search-icon.svg" alt="search-icon" width="20px">
-                                        Search
-                                    </label>
-                                    <input type="text" 
-                                    class="form-control mt-2 shadow search-bar" placeholder="Search" 
-                                    aria-label="Search">
-                                </div>
-                            </form>
+    <header class="header-index header-homes">
+        <nav class="container-fluid nav-main navbar navbar-expand-xl">
+            <div class="col-md-4">
+                <div class="row d-flex justify-content-md-start flex-nowrap">
+                    <a class="navbar-brand pt-2" href="#">
+                        <img src="./assets/img/homepage/svgs/airbnb-logo-red.svg" alt="red-logo" width="40px">
+                    </a>
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation"
+                    onclick="toggleNavbar()">
+                        <span class="ml-n5">
+                            <img class="mb-3" src="./assets/img/homepage/svgs/down-arrow-gray.svg" alt="toggle" width="10px">
+                        </span>
+                    </button>
+                    <!--Search Bar-->
+                    <form action="#">
+                        <div class="form-group container-searchbar">
+                            <label class="search-bar-label" for="search">
+                                <img src="./assets/img/homepage/svgs/search-icon.svg" alt="search-icon" width="20px">
+                                Search
+                            </label>
+                            <input type="text" 
+                            class="form-control mt-2 shadow search-bar" placeholder="Search" 
+                            aria-label="Search">
                         </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8 d-flex justify-content-md-end">
+                <div class="row">
+                    <div class="navbar-collapse collapse">
+                        <ul class="navbar-nav ul-main pt-3 navbar-secondary">
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    <img class="mr-1" src="./assets/img/homepage/svgs/world-gray.svg" alt="world" width="10px">
+                                    English (GB)
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    &pound; GBP
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    Become a host
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    Help
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    Sign up
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Log in
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-md-end">
-                        <div class="row">
-                            <div class="navbar-collapse collapse">
-                                <ul class="navbar-nav ul-main pt-3 navbar-secondary">
-                                    <li class="nav-item mr-3">
-                                        <a class="nav-link" href="#">
-                                            <img class="mr-1" src="./assets/img/homepage/svgs/world-gray.svg" alt="world" width="10px">
-                                            English (GB)
+                        <div class="navbar-content overlay container-section">
+                            <a href="javascript:void(0)" class="closebtn" onclick="toggleNavbar()">
+                                <img class="mt-3" src="./assets/img/homepage/svgs/airbnb-logo-red.svg" alt="airbnb-logo-red" width="40px">
+                                <!--Toggle Simgesi gelecek-->
+                            </a>
+                            <!-- Overlay content -->
+                            <div class="overlay-content">
+                                <ul class="nav flex-column">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <span><hr></span>
+                                    <li>
+                                        <a href="#">Download the App</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Invite friends </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Refer hosts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Airbnb for Work</a>
+                                    </li>
+                                    <span><hr></span>
+                                    <li class="d-flex justify-content-between">
+                                        <a href="#">
+                                            Language
+                                            <span>English (GB)</span>
+                                        </a>
+                                        <img src="./assets/img/homepage/svgs/world-black.svg" alt="world-black" width="25px">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Currency
+                                            <span>&pound; GBP</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item mr-3">
-                                        <a class="nav-link" href="#">
-                                            &pound; GBP
+                                    <span><hr></span>
+                                    <li class="d-flex justify-content-between">
+                                        <a href="#">
+                                            List your place
+                                            <span>
+                                                Earn up to strong
+                                                <strong>&pound;614 a month</strong>
+                                            </span>
+                                        </a>
+                                        <img src="./assets/img/homepage/svgs/home.svg" alt="home" width="44px">
+                                    </li>
+                                    <li>
+                                        <a href="#">Learn about hosting your home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Host an experience
+                                            <span>Earn money during what you love</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item mr-3">
-                                        <a class="nav-link" href="#">
-                                            Become a host
-                                        </a>
+                                    <span><hr></span>
+                                    <li>
+                                        <a href="#">Help</a>
                                     </li>
-                                    <li class="nav-item mr-3">
-                                        <a class="nav-link" href="#">
-                                            Help
-                                        </a>
+                                    <li>
+                                        <a href="#">Sign up</a>
                                     </li>
-                                    <li class="nav-item mr-3">
-                                        <a class="nav-link" href="#">
-                                            Sign up
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            Log in
-                                        </a>
+                                    <li>
+                                        <a href="#">Login</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="navbar-content overlay container-section">
-                                <a href="javascript:void(0)" class="closebtn" onclick="toggleNavbar()">
-                                    <img class="mt-3" src="./assets/img/homepage/svgs/airbnb-logo-red.svg" alt="airbnb-logo-red" width="40px">
-                                    <!--Toggle Simgesi gelecek-->
-                                </a>
-                                <!-- Overlay content -->
-                                <div class="overlay-content">
-                                    <ul class="nav flex-column">
-                                        <li>
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <span><hr></span>
-                                        <li>
-                                            <a href="#">Download the App</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Invite friends </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Refer hosts</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Airbnb for Work</a>
-                                        </li>
-                                        <span><hr></span>
-                                        <li class="d-flex justify-content-between">
-                                            <a href="#">
-                                                Language
-                                                <span>English (GB)</span>
-                                            </a>
-                                            <img src="./assets/img/homepage/svgs/world-black.svg" alt="world-black" width="25px">
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Currency
-                                                <span>&pound; GBP</span>
-                                            </a>
-                                        </li>
-                                        <span><hr></span>
-                                        <li class="d-flex justify-content-between">
-                                            <a href="#">
-                                                List your place
-                                                <span>
-                                                    Earn up to strong
-                                                    <strong>&pound;614 a month</strong>
-                                                </span>
-                                            </a>
-                                            <img src="./assets/img/homepage/svgs/home.svg" alt="home" width="44px">
-                                        </li>
-                                        <li>
-                                            <a href="#">Learn about hosting your home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Host an experience
-                                                <span>Earn money during what you love</span>
-                                            </a>
-                                        </li>
-                                        <span><hr></span>
-                                        <li>
-                                            <a href="#">Help</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Sign up</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Login</a>
-                                        </li>
-                                    </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div class="bg-dark" style="height: 590px;"></div>
+        <div class="container-rooms main-rooms">
+            <article>
+                <section class="section-overview">
+                    <h1 class="tundora h2">Underground Hygge</h1>
+                    <div class="row-profile-pic">
+                        <a href="#">Orondo</a>
+                        <div class="profile-pic-container">
+                            <img src="./assets/img/rooms/overview/pp.jpg" alt="pp">
+                            <div>
+                                <img src="./assets/img/homepage/svgs/exclamation-mark.svg" alt="">
+                            </div>
+                            <span class="boulder pp-name">Kristie</span>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <p>
+                        <span>2 guests</span>
+                        <span class="hide-element"> · </span>
+                        <span>1 bedroom</span>
+                        <span class="hide-element"> · </span>
+                        <span>1 bed</span>
+                        <span class="hide-element"> · </span>
+                        <span>1 bathroom</span>
+                    </p>
+                    <hr>
+                    <div class="row-custom">
+                        <i class="fas fa-home"></i>
+                        <div>
+                            <h5 class="tundora">Entire home</h5>
+                            <p>You'll have the earth house to yourself.</p>
+                        </div>
+                    </div>
+                    <div class="row-custom">
+                        <i class="fas fa-bell"></i>
+                        <div>
+                            <h5 class="tundora">Self check-in</h5>
+                            <p>Check yourself in with the keypad.</p>
+                        </div>
+                    </div>
+                    <div class="row-custom">
+                        <i class="fas fa-spray-can"></i>
+                        <div>
+                            <h5 class="tundora">Sparkling clean</h5>
+                            <p>14 recent guests said this place was sparkling clean.</p>
+                        </div>
+                    </div>
+                    <div class="row-custom">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div>
+                            <h5 class="tundora">Kristie is a Superhost</h5>
+                            <p>Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="paragraph-info">
+                        This inspired dwelling nestled right into the breathtaking Columbia River Gorge mountainside. 
+                        Reverently framed by the iconic round doorway, the wondrous views will entrance your imagination and inspire an unforgettable journey. Every nook of this little habitation will warm your sole, every cranny will charm your expedition of repose. Up the pathway, tucked into the earth, an unbelievable adventure awaits!
+                    </p>
+                    <div class="show">
+                        <a class="link-collapse" data-toggle="collapse" href=".collapsed-content" 
+                        role="button" aria-expanded="false" aria-controls="collapsed-content">Read more about space
+                        <img src="./assets/img/homepage/svgs/down-arrow-green.svg" width="10px" alt="down-arrow-green"></a>
+                    </div>
+                    <div class="collapse collapsed-content">
+                        <h5>Guest access</h5>
+                        <p>We have 6 acres to hike around & explore :)</p>
+                        <h5>Other things to note</h5>
+                        <p>
+                            There is a parking area at the bottom of the
+                            hill and a short but steep hike to the hobbit hole. 
+                            It's just under a 100 yards and takes less than 5 mins if your physically able bodied. If you are not please look at the pictures to determine if you will be comfortable with the distance. 
+                        </p>
+                        <p>Booking in the winter you will need a 4 wheel drive vehicle. Snow is likely December - March.</p>
+                        <div class="hide d-flex">
+                            <a class="link-collapse" data-toggle="collapse" href=".collapsed-content" 
+                            role="button" aria-expanded="false" aria-controls="collapsed-content">Hide</a>
+                            <svg class="mt-2 ml-2" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 10px; width: 10px; display: block; fill: currentcolor; transform: rotate(0.5turn);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd" stroke="none" fill="#008489" stroke-width="1px"></path></svg>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="main-link font-weight-normal mt-4" href="#">Contact Host</a>
+                    <hr class="my-5">
+                    <div class="container-amenities">
+                        <h5>Amenities</h5>
+                        <div class="row">
+                            <div class="col-6 d-flex">
+                                <img src="./assets/img/homepage/svgs/essentials.svg" width="20px" alt="essentials">
+                                <p>Essentials</p>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <img src="./assets/img/homepage/svgs/heating.svg" width="20px" alt="heating">
+                                <p>Heating</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-6 d-flex">
+                                <img src="./assets/img/homepage/svgs/fireplace.svg" width="20px" alt="fireplace">
+                                <p>Indoor fireplace</p>
+                            </div>
+                            <div class="col-6 d-flex">
+                                <img src="./assets/img/homepage/svgs/hot-water.svg" width="20px" alt="hot-water">
+                                <p>Hot water</p>
+                            </div>
+                        </div>
+                        <a class="main-link mt-2 font-weight-normal" href="#">Show all 11 amenities</a>
+                    </div>
+                    <hr class="my-5">
+                    <h5>Sleeping arrangements</h5>
+                    <div class="bedroom-container">
+                        <div class="bedroom">
+                            <img src="./assets/img/homepage/svgs/bed.svg" width="40px" alt="bed">
+                            <h5>Bedroom 1</h5>
+                            <p>1 king bed</p>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <h5>Availability</h5>
+                    <p>This host offers a 26% weekly discount</p>
+                    <div class="calender">
+                    <!--Calender buraya gelecek-->
+                    </div>
+                    <hr class="mt-5">
+                </section>
+                <!--End of Overview-->
+                
+                <section class="section-reviews">
+                    <h2>Reviews</h2>
+                    <div class="row">
+                        <div class="col container-rating">
+                            <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;fill:currentColor; margin-bottom: 5px;"><path d="M972 380c9 28 2 50-20 67L725 619l87 280c11 39-18 75-54 75-12 0-23-4-33-12L499 790 273 962a58 58 0 0 1-78-12 50 50 0 0 1-8-51l86-278L46 447c-21-17-28-39-19-67 8-24 29-40 52-40h280l87-279c7-23 28-39 52-39 25 0 47 17 54 41l87 277h280c24 0 45 16 53 40z" stroke="none" fill="#008489" stroke-width="1px"></path></svg>
+                            <span class="rating">4.87</span>
+                            <span class="vertical-line"></span>
+                            <span class="rating">564</span><span class="review">reviews</span>
+                        </div>
+                    </div>
+                    <div class="card card-review">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Communication</span>
+                                    <div class="progress-container">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="point">5.0</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Check-in</span>
+                                    <div class="progress-container">
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 100%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="point">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Cleanliness</span>
+                                    <div class="progress-container">
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 98%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="point">4.9</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Accuracy</span>
+                                    <div class="progress-container">
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 98%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="point">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Location</span>
+                                    <div class="progress-container">
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 98%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="point">4.9</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Accuracy</span>
+                                    <div class="progress-container">
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 94%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="point">4.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Stylish space</span>
+                                    <div class="progress-container">
+                                        <img src="./assets/img/homepage/svgs/chair.svg" alt="chair" width="24px">
+                                        <span class="point ml-2">104</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Quick responses</span>
+                                    <div class="progress-container">
+                                        <img src="./assets/img/homepage/svgs/message.svg" alt="message" width="24px">
+                                        <span class="point ml-2">92</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Sparkling clean</span>
+                                    <div class="progress-container">
+                                        <img src="./assets/img/homepage/svgs/bath.svg" alt="bath" width="24px">
+                                        <span class="point ml-2">83</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Outstanding hospitality</span>
+                                    <div class="progress-container">
+                                        <img src="./assets/img/homepage/svgs/heart.svg" alt="heart" width="24px">
+                                        <span class="point ml-2">70</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-between">
+                                    <span class="card-review-label">Amazing amenities</span>
+                                    <div class="progress-container">
+                                        <img src="./assets/img/homepage/svgs/cofee.svg" alt="cofee" width="24px">
+                                        <span class="point ml-2">49</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </nav>
-        </header>
-
-        <main>
-            <section class="section-overview container-section">
-                <h1 class="tundora h2">Underground Hygge</h1>
-                <div class="row-profile-pic">
-                    <a href="#">Orondo</a>
-                    <div class="profile-pic-container">
-                        <img src="./assets/img/rooms/overview/pp.jpg" alt="pp">
-                        <div>
-                            <img src="./assets/img/homepage/svgs/exclamation-mark.svg" alt="">
+                    <form class="mt-5 mb-3" action="#">
+                        <div class="form-group search-bar-review">
+                            <input type="search" class="form-control my-3 search-reviews" placeholder="Search reviews">
+                            <img class="search-icon" src="./assets/img/homepage/svgs/search-icon.svg" width="16px" alt="search-icon">
                         </div>
-                        <span class="boulder pp-name">Kristie</span>
-                        <a href="#" class="stretched-link"></a>
+                    </form>
+                    <div class="comment">
+                        <div class="comment-pp-row">
+                            <div>
+                                <img src="./assets/img/rooms/reviews/roland.jpg" alt="pp">
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                            <div>
+                                <span class="boulder comment-name">Roland</span>
+                                <span class="comment-date">July 2019</span>
+                            </div>
+                        </div>
+                        <p>This place is very secluded, but the view is definitely worth it. if you come in the summer time, bring wasp repellent, or you may be sorry.</p>
                     </div>
-                </div>
-                <p>
-                    <span>2 guests</span>
-                    <span class="hide-element"> · </span>
-                    <span>1 bedroom</span>
-                    <span class="hide-element"> · </span>
-                    <span>1 bed</span>
-                    <span class="hide-element"> · </span>
-                    <span>1 bathroom</span>
-                </p>
-                <hr>
-                <div class="row-custom">
-                    <i class="fas fa-home"></i>
+                    <hr>
+                    <div class="comment">
+                        <div class="comment-pp-row">
+                            <div>
+                                <img src="./assets/img/rooms/reviews/liz.jpg" alt="pp">
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                            <div>
+                                <span class="boulder comment-name">Liz</span>
+                                <span class="comment-date">February 2018</span>
+                            </div>
+                        </div>
+                        <p>
+                            We had a wonderful stay at the end of February this year. Our host, Kristie, was very communicative before our trip and sent us loads of helpful information. Aside from the obvious magical allure you can see in the photos, Kristie added a number of fun, thoughtful touches that delighted us throughout our stay. There was still a good bit of snow surrounding the property and we were so thankful for the tip from Kristie about the much-needed four-wheel drive and for the gas fireplace inside that kept us toasty. The nearby towns are pretty sleepy around this time of year so if you’re interested in festivals and events, other times of year would be best, according to the locals we spoke to. It is also truly off the grid, so be prepared to unplug and unwind because you won’t be getting WiFi or much phone signal inside.
+                        </p>
+                        <a href="#" class="link-collapse">Read more</a>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <div class="comment-pp-row">
+                            <div>
+                                <img src="./assets/img/rooms/reviews/sean.jpg" alt="pp">
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                            <div>
+                                <span class="boulder comment-name">Sean</span>
+                                <span class="comment-date">May 2016</span>
+                            </div>
+                        </div>
+                        <p>
+                            The place was amazing! The directions were clear, I was just distracted by all the views and thought maybe I drove past it at first. Some nice neighbors helped me out. Parking area was easy to find and the little journey up the path to the front door was a nice procession. The coffee and snacks were delicious and a nice welcome. everything was so well appointed and comfortable. I slept really well and was eager to take advantage of the amenities like the fireplace.
+                        </p>
+                        <a href="#" class="link-collapse">Read more</a>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <div class="comment-pp-row">
+                            <div>
+                                <img src="./assets/img/rooms/reviews/emily.jpg" alt="pp">
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                            <div>
+                                <span class="boulder comment-name">Emily</span>
+                                <span class="comment-date">November 2019</span>
+                            </div>
+                        </div>
+                        <p>
+                            Such a fun experience! Especially for a LOTR/ Hobbit fan! My sister came in from Alabama and was totally taken with the scenery and she felt like the house put her in the movie. Would definitely recommend this to anyone wanting a fun adventure for a night too. I had fun carving my owl. :)
+                        </p>
+                        <a href="#" class="link-collapse">Read more</a>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <div class="comment-pp-row">
+                            <div>
+                                <img src="./assets/img/rooms/reviews/chase.jpg" alt="pp">
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                            <div>
+                                <span class="boulder comment-name">Chase</span>
+                                <span class="comment-date">November 2019</span>
+                            </div>
+                        </div>
+                        <p>
+                            If you are a huge fan or a casual enthusiast of Lord of the Rings this is a must visit. I felt the same wonder and joy in my heart as I did when I first experienced Middle-earth when I was 12 years old. An absolute delight from start to finish, if a little bit off the beaten track.
+                        </p>
+                        <a href="#" class="link-collapse">Read more</a>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <div class="comment-pp-row">
+                            <div>
+                                <img src="./assets/img/rooms/reviews/haley.jpg" alt="pp">
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                            <div>
+                                <span class="boulder comment-name">Haley</span>
+                                <span class="comment-date">November 2019</span>
+                            </div>
+                        </div>
+                        <p>Beautiful view, thoughtful touches and peaceful atmosphere. We loved our stay!</p>
+                    </div>
+                    <hr>
+                    <div class="comment">
+                        <div class="comment-pp-row">
+                            <div>
+                                <img src="./assets/img/rooms/reviews/ramona.jpg" alt="pp">
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                            <div>
+                                <span class="boulder comment-name">Ramona</span>
+                                <span class="comment-date">October 2019</span>
+                            </div>
+                        </div>
+                        <p>We had a great time. It's so beautiful up in the mountains. You will love it!</p>
+                    </div>
+                    <hr>
+                </section>
+                <!--End of Reviews-->
+            </article>
+            <article class="container-card-dates">
+                    <div class="card card-dates">
+                        <div class="card-body card-body-dates">
+                            <h5 class="price">272 &pound; <small>per night</small></h5>
+                            <div class="card-dates-rating-container">
+                                <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:10px;width:10px;fill:currentColor; margin-bottom: 5px;"><path d="M972 380c9 28 2 50-20 67L725 619l87 280c11 39-18 75-54 75-12 0-23-4-33-12L499 790 273 962a58 58 0 0 1-78-12 50 50 0 0 1-8-51l86-278L46 447c-21-17-28-39-19-67 8-24 29-40 52-40h280l87-279c7-23 28-39 52-39 25 0 47 17 54 41l87 277h280c24 0 45 16 53 40z" stroke="none" fill="#008489" stroke-width="1px"></path></svg>
+                                <span class="rating font-weight-bold">4.87</span>
+                                <span class="boulder">(564 reviews)</span>
+                            </div>
+                            <hr>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="dates">Dates</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="dates">Dates</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary button button-primary w-100">Reserve</button>
+                        </div>
+                    </div>
+            </article>
+        </div>
+        <article class="container-fixed-bar">
+            <div class="card card-fixed">
+                <div class="card-body card-body-fixed">
                     <div>
-                        <h5 class="tundora">Entire home</h5>
-                        <p>You'll have the earth house to yourself.</p>
-                    </div>
-                </div>
-                <div class="row-custom">
-                    <i class="fas fa-bell"></i>
-                    <div>
-                        <h5 class="tundora">Self check-in</h5>
-                        <p>Check yourself in with the keypad.</p>
-                    </div>
-                </div>
-                <div class="row-custom">
-                    <i class="fas fa-spray-can"></i>
-                    <div>
-                        <h5 class="tundora">Sparkling clean</h5>
-                        <p>14 recent guests said this place was sparkling clean.</p>
-                    </div>
-                </div>
-                <div class="row-custom">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <div>
-                        <h5 class="tundora">Kristie is a Superhost</h5>
-                        <p>Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</p>
-                    </div>
-                </div>
-                <hr>
-                <p class="paragraph-info">
-                    This inspired dwelling nestled right into the breathtaking Columbia River Gorge mountainside. 
-                    Reverently framed by the iconic round doorway, the wondrous views will entrance your imagination and inspire an unforgettable journey. Every nook of this little habitation will warm your sole, every cranny will charm your expedition of repose. Up the pathway, tucked into the earth, an unbelievable adventure awaits!
-                </p>
-                <div class="show">
-                    <a class="link-collapse" data-toggle="collapse" href=".collapsed-content" 
-                    role="button" aria-expanded="false" aria-controls="collapsed-content">Read more about space
-                    <img src="./assets/img/homepage/svgs/down-arrow-green.svg" width="10px" alt="down-arrow-green"></a>
-                </div>
-                <div class="collapse collapsed-content">
-                    <h5>Guest access</h5>
-                    <p>We have 6 acres to hike around & explore :)</p>
-                    <h5>Other things to note</h5>
-                    <p>
-                        There is a parking area at the bottom of the
-                        hill and a short but steep hike to the hobbit hole. 
-                        It's just under a 100 yards and takes less than 5 mins if your physically able bodied. If you are not please look at the pictures to determine if you will be comfortable with the distance. 
-                    </p>
-                    <p>Booking in the winter you will need a 4 wheel drive vehicle. Snow is likely December - March.</p>
-                    <div class="hide d-flex">
-                        <a class="link-collapse" data-toggle="collapse" href=".collapsed-content" 
-                        role="button" aria-expanded="false" aria-controls="collapsed-content">Hide</a>
-                        <svg class="mt-2 ml-2" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 10px; width: 10px; display: block; fill: currentcolor;"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd" stroke="none" fill="#008489" stroke-width="1px"></path></svg>
-                    </div>
-                </div>
-                <br>
-                <a class="main-link font-weight-normal mt-4" href="#">Contact Host</a>
-                <hr class="my-5">
-                <div class="container-amenities">
-                    <h5>Amenities</h5>
-                    <div class="row">
-                        <div class="col-6 d-flex">
-                            <img src="./assets/img/homepage/svgs/essentials.svg" width="20px" alt="essentials">
-                            <p>Essentials</p>
+                        <h5 class="price">272 &pound; <small>per night</small></h5>
+                        <div class="card-dates-rating-container">
+                            <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:10px;width:10px;fill:currentColor; margin-bottom: 5px;"><path d="M972 380c9 28 2 50-20 67L725 619l87 280c11 39-18 75-54 75-12 0-23-4-33-12L499 790 273 962a58 58 0 0 1-78-12 50 50 0 0 1-8-51l86-278L46 447c-21-17-28-39-19-67 8-24 29-40 52-40h280l87-279c7-23 28-39 52-39 25 0 47 17 54 41l87 277h280c24 0 45 16 53 40z" stroke="none" fill="#008489" stroke-width="1px"></path></svg>
+                            <span class="rating font-weight-bold">4.87</span>
+                            <span class="boulder">(564 reviews)</span>
                         </div>
-                        <div class="col-6 d-flex">
-                            <img src="./assets/img/homepage/svgs/heating.svg" width="20px" alt="heating">
-                            <p>Heating</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-6 d-flex">
-                            <img src="./assets/img/homepage/svgs/fireplace.svg" width="20px" alt="fireplace">
-                            <p>Indoor fireplace</p>
-                        </div>
-                        <div class="col-6 d-flex">
-                            <img src="./assets/img/homepage/svgs/hot-water.svg" width="20px" alt="hot-water">
-                            <p>Hot water</p>
-                        </div>
-                    </div>
-                    <a class="main-link mt-2 font-weight-normal" href="#">Show all 11 amenities</a>
-                </div>
-                <hr class="my-5">
-                <h5>Sleeping arrangements</h5>
-                <div class="bedroom-container">
-                    <div class="bedroom">
-                        <img src="./assets/img/homepage/svgs/bed.svg" width="40px" alt="bed">
-                        <h5>Bedroom 1</h5>
-                        <p>1 king bed</p>
+                    </div>    
+                    <div class="container-reserve">
+                        <button type="submit" class="btn btn-primary button button-primary w-100">Reserve</button>
                     </div>
                 </div>
-                <hr class="my-5">
-                <h5>Availability</h5>
-                <p>This host offers a 26% weekly discount</p>
-                <div class="calender">
-                <!--Calender buraya gelecek-->
-                </div>
-                <hr class="mt-5">
-            </section>
-            <!--End of Overview-->
-            
-            <section class="section-reviews container-section">
-                <h2>Reviews</h2>
-                <div class="row">
-                    <div class="col">
-                        <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;fill:currentColor"><path d="M972 380c9 28 2 50-20 67L725 619l87 280c11 39-18 75-54 75-12 0-23-4-33-12L499 790 273 962a58 58 0 0 1-78-12 50 50 0 0 1-8-51l86-278L46 447c-21-17-28-39-19-67 8-24 29-40 52-40h280l87-279c7-23 28-39 52-39 25 0 47 17 54 41l87 277h280c24 0 45 16 53 40z" stroke="none" fill="#008489" stroke-width="1px"></path></svg>
-                        <span>4.87</span>
-                        
-                    </div>
-                </div>
-                
-            </section>
-        </main>
+            </div>
+        </article>
+    </main>
+    
 
 
 

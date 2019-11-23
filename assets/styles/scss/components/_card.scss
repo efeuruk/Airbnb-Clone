@@ -182,6 +182,76 @@
    }
 }
 
+.card-review {
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.16);
+    
+    .card-review-label {
+        font-size: 18px;
+        font-weight: 400;
+        color: $tundora;
+    }
+
+    .progress-container {
+        display: flex;
+        align-items: center;
+        .progress {
+            width: 80px;
+            height: 5px;
+            margin-right: 10px;
+            .progress-bar {
+                background-color: $teal
+            }
+        }
+    }
+
+    .point {
+        font-size: 18px;
+    }
+    
+}
+
+.container-card-dates {
+    display: none;
+    .card-dates {
+        .card-body-dates {
+            .card-dates-rating-container {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.container-fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .card-fixed {
+        border-radius: 0px;
+        .card-body-fixed {
+            display: flex;
+            justify-content: space-between;
+            >div {
+                line-height: 1rem;
+                .price {
+                    font-size: 25px;
+                }
+                .card-dates-rating-container {
+                    font-size: 12px;
+                }
+            }
+            .container-reserve {
+                align-self: center;
+                button {
+                    padding: 10px 60px;
+                }
+            }
+            
+        }
+    }
+}
 
 
 @include media-breakpoint-between(xs,sm) {
@@ -258,6 +328,20 @@
                 display: block;
             }
         }
+    }
+
+    .container-card-dates {
+        display: block;
+        margin-left: 50px;
+        .card-dates {
+            .card-body-dates {
+                width: 380px;
+            }
+        }
+    }
+
+    .container-fixed-bar {
+        display: none;
     }
     
 }

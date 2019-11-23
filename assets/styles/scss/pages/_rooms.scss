@@ -1,3 +1,8 @@
+.main-rooms {
+    display: flex;
+    flex-direction: column;
+}
+
 .row-custom {
     display: flex;
     i {
@@ -23,6 +28,16 @@
     a {
         font-size: 1.1rem;
     }
+}
+
+.price {
+    color: $tundora;
+    font-weight: 900;
+    font-size: 30px;
+}
+small {
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .section-overview {
@@ -97,10 +112,100 @@
     }
 }
 
+.section-reviews {
+    .container-rating {
+        .rating {
+            font-weight: 800;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .vertical-line {
+            border-right: 1px solid #EBEBEB;
+            margin-right: 20px;
+            font-weight: 400;
+        }
+
+        .review {
+            color: $tundora;
+            font-size: 18px;
+        }
+    }
+
+    .search-bar-review {
+        position: relative;
+        max-width: 340px;
+        height: 30px;
+        .search-reviews {
+            color: $tundora;
+            font-size: 18px;
+            &::placeholder {
+                color: $tundora;
+                font-size: 18px;
+            }
+        }
+        .search-icon {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+        }
+    }
+    .comment {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        .comment-pp-row {
+            position: relative;
+            margin-bottom: 20px;
+            >div {
+                width: 48px;
+                margin-top: auto;
+                img {
+                    width: 100%;
+                    border-radius: 100px;
+                    margin-top: 10px;
+                }
+            }
+            
+            .comment-name, .comment-date {
+                position: absolute;
+                top: 10px;
+                left: 80px;
+                color: $tundora;
+            }
+            .comment-date {
+                top: 40px;
+                color: $boulder;
+            }
+        }
+
+        p {
+            display: block;
+            display: -webkit-box;
+            max-width: 560px;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.43rem;
+        }
+
+        
+    }
+    
+    
+}
+
 @include media-breakpoint-up(md) {
     .section-overview {
         .hide-element {
             visibility: hidden;
         }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .main-rooms {
+        flex-direction: row;
     }
 }

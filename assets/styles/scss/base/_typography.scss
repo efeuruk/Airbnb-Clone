@@ -32,3 +32,8 @@ section {
 .boulder {
     color: $boulder;
 }
+
+textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {   
+    border-color: $teal;
+    outline: 0 none;
+}

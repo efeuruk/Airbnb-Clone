@@ -4583,6 +4583,78 @@ input[type="button"].btn-block {
   margin-bottom: -1px;
 }
 
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #ff5a5f;
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
+.progress-bar-animated {
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+          animation: progress-bar-stripes 1s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar-animated {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 .close {
   float: right;
   font-size: 1.5rem;
@@ -8823,6 +8895,11 @@ section {
   color: #767676;
 }
 
+textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
+  border-color: #008489;
+  outline: 0 none;
+}
+
 .container-section {
   width: 100%;
   padding-right: 24px;
@@ -8894,6 +8971,44 @@ section {
     width: 100%;
     padding-right: 245px;
     padding-left: 245px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container-rooms {
+  width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container-rooms {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-rooms {
+    width: 100%;
+    padding-right: 130px;
+    padding-left: 130px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-rooms {
+    width: 100%;
+    padding-right: 250px;
+    padding-left: 250px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -9250,6 +9365,16 @@ section {
   }
 }
 
+.main-rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .row-custom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9275,6 +9400,17 @@ section {
 
 .show a, .hide a {
   font-size: 1.1rem;
+}
+
+.price {
+  color: #484848;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+small {
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .section-overview h5 {
@@ -9362,9 +9498,117 @@ section {
   background-color: black;
 }
 
+.section-reviews .container-rating .rating {
+  font-weight: 800;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.section-reviews .container-rating .vertical-line {
+  border-right: 1px solid #EBEBEB;
+  margin-right: 20px;
+  font-weight: 400;
+}
+
+.section-reviews .container-rating .review {
+  color: #484848;
+  font-size: 18px;
+}
+
+.section-reviews .search-bar-review {
+  position: relative;
+  max-width: 340px;
+  height: 30px;
+}
+
+.section-reviews .search-bar-review .search-reviews {
+  color: #484848;
+  font-size: 18px;
+}
+
+.section-reviews .search-bar-review .search-reviews::-webkit-input-placeholder {
+  color: #484848;
+  font-size: 18px;
+}
+
+.section-reviews .search-bar-review .search-reviews:-ms-input-placeholder {
+  color: #484848;
+  font-size: 18px;
+}
+
+.section-reviews .search-bar-review .search-reviews::-ms-input-placeholder {
+  color: #484848;
+  font-size: 18px;
+}
+
+.section-reviews .search-bar-review .search-reviews::placeholder {
+  color: #484848;
+  font-size: 18px;
+}
+
+.section-reviews .search-bar-review .search-icon {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+.section-reviews .comment {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-reviews .comment .comment-pp-row {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-reviews .comment .comment-pp-row > div {
+  width: 48px;
+  margin-top: auto;
+}
+
+.section-reviews .comment .comment-pp-row > div img {
+  width: 100%;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+.section-reviews .comment .comment-pp-row .comment-name, .section-reviews .comment .comment-pp-row .comment-date {
+  position: absolute;
+  top: 10px;
+  left: 80px;
+  color: #484848;
+}
+
+.section-reviews .comment .comment-pp-row .comment-date {
+  top: 40px;
+  color: #767676;
+}
+
+.section-reviews .comment p {
+  display: block;
+  display: -webkit-box;
+  max-width: 560px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.43rem;
+}
+
 @media (min-width: 768px) {
   .section-overview .hide-element {
     visibility: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-rooms {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -9605,6 +9849,92 @@ section {
   color: white;
 }
 
+.card-review {
+  margin-top: 20px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+.card-review .card-review-label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #484848;
+}
+
+.card-review .progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-review .progress-container .progress {
+  width: 80px;
+  height: 5px;
+  margin-right: 10px;
+}
+
+.card-review .progress-container .progress .progress-bar {
+  background-color: #008489;
+}
+
+.card-review .point {
+  font-size: 18px;
+}
+
+.container-card-dates {
+  display: none;
+}
+
+.container-card-dates .card-dates .card-body-dates .card-dates-rating-container {
+  font-size: 14px;
+}
+
+.container-fixed-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container-fixed-bar .card-fixed {
+  border-radius: 0px;
+}
+
+.container-fixed-bar .card-fixed .card-body-fixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-fixed-bar .card-fixed .card-body-fixed > div {
+  line-height: 1rem;
+}
+
+.container-fixed-bar .card-fixed .card-body-fixed > div .price {
+  font-size: 25px;
+}
+
+.container-fixed-bar .card-fixed .card-body-fixed > div .card-dates-rating-container {
+  font-size: 12px;
+}
+
+.container-fixed-bar .card-fixed .card-body-fixed .container-reserve {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container-fixed-bar .card-fixed .card-body-fixed .container-reserve button {
+  padding: 10px 60px;
+}
+
 @media (max-width: 767.98px) {
   .container-card-explore {
     -webkit-box-orient: horizontal;
@@ -9656,6 +9986,16 @@ section {
   }
   .container-card-places div:nth-child(5), .container-card-places div:nth-child(6) {
     display: block;
+  }
+  .container-card-dates {
+    display: block;
+    margin-left: 50px;
+  }
+  .container-card-dates .card-dates .card-body-dates {
+    width: 380px;
+  }
+  .container-fixed-bar {
+    display: none;
   }
 }
 
