@@ -1,3 +1,27 @@
+.container-banner {
+    height: 440px;
+    overflow: hidden;
+    .zoom {
+        border: 2px solid black;
+        img {
+            width: 100%;
+            transition: transform .5s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .right {
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 220px;
+        }
+    }
+}
+
+
 .main-rooms {
     display: flex;
     flex-direction: column;
@@ -35,6 +59,7 @@
     font-weight: 900;
     font-size: 30px;
 }
+
 small {
     font-weight: 500;
     font-size: 14px;
@@ -207,7 +232,71 @@ small {
         
     }
     
+    .pagination {
+        width: 250px;
+        background-color: transparent;
+        position: relative;
+        a {
+            color: transparent;
+        }
+        .button-pagination {
+            &.active {
+                display: none;
+            }
+        }
+        .button-pagination-container {
+            position: absolute;
+            left: 0;
+        }
+        @include media-breakpoint-up(md)  {
+            display: flex;
+            justify-content: space-between;
+            a {
+                color: $teal;
+            }
+            .button-pagination {
+                &.active {
+                    display: block;
+                }
+            }
+            .button-pagination-container {
+                left: 220px;
+                top: 5px;
+                margin-left: 60px;
+            }
+        }
+    }
     
+}
+
+.section-host {
+    .container-host-pp {
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 100px;
+        }
+    }
+
+    .comment-host {
+        display: block;
+        display: -webkit-box;
+        max-width: 520px;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.43rem;
+    }
+}
+
+.section-policies {
+    .container-house-rules {
+        i {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+    }
 }
 
 @include media-breakpoint-up(md) {

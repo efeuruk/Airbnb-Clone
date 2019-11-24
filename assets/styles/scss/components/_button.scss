@@ -37,3 +37,17 @@
         text-decoration: none;
     }
 }
+
+.button-pagination {
+    border: 1.5px solid $teal;
+    border-radius: 50%;
+    color: $teal;
+    padding: 5px 8px;
+    &.active {
+        background-color: $teal;
+        span {
+            color: white;
+            padding: 4px 4px;
+        }
+    }
+}

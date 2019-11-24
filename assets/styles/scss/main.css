@@ -9365,6 +9365,37 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
   }
 }
 
+.container-banner {
+  height: 440px;
+  overflow: hidden;
+}
+
+.container-banner .zoom {
+  border: 2px solid black;
+}
+
+.container-banner .zoom img {
+  width: 100%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.container-banner .zoom img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container-banner .right {
+  overflow: hidden;
+}
+
+.container-banner .right img {
+  width: 100%;
+  height: 220px;
+}
+
 .main-rooms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9620,6 +9651,69 @@ small {
   line-height: 1.43rem;
 }
 
+.section-reviews .pagination {
+  width: 250px;
+  background-color: transparent;
+  position: relative;
+}
+
+.section-reviews .pagination a {
+  color: transparent;
+}
+
+.section-reviews .pagination .button-pagination.active {
+  display: none;
+}
+
+.section-reviews .pagination .button-pagination-container {
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .section-reviews .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-reviews .pagination a {
+    color: #008489;
+  }
+  .section-reviews .pagination .button-pagination.active {
+    display: block;
+  }
+  .section-reviews .pagination .button-pagination-container {
+    left: 220px;
+    top: 5px;
+    margin-left: 60px;
+  }
+}
+
+.section-host .container-host-pp img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+}
+
+.section-host .comment-host {
+  display: block;
+  display: -webkit-box;
+  max-width: 520px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.43rem;
+}
+
+.section-policies .container-house-rules i {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
 @media (min-width: 768px) {
   .section-overview .hide-element {
     visibility: hidden;
@@ -9693,6 +9787,22 @@ small {
   color: #222222;
   border-color: #222222;
   text-decoration: none;
+}
+
+.button-pagination {
+  border: 1.5px solid #008489;
+  border-radius: 50%;
+  color: #008489;
+  padding: 5px 8px;
+}
+
+.button-pagination.active {
+  background-color: #008489;
+}
+
+.button-pagination.active span {
+  color: white;
+  padding: 4px 4px;
 }
 
 .scrollable-card {
