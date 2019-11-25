@@ -10,9 +10,19 @@ function toggleNavbar() {
 }
 
 $(document).ready(function() {
-    $('.slick-container').slick({
-        dots: true,
-        prevArrow: $('.slick-prev'),
-        nextArrow: $('.slick-next'),
+    // $('.slick-container').slick({
+    //     dots: true,
+    //     prevArrow: $('.slick-prev'),
+    //     nextArrow: $('.slick-next'),
+        
+    // });
+
+    $('.slick-container').each(function(){
+        var slickInduvidual = $(this);
+        slickInduvidual.slick({
+            dots: true,
+            prevArrow: slickInduvidual.siblings('.slick-prev'),
+            nextArrow: slickInduvidual.siblings('.slick-next')
+        });
     });
 });

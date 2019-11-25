@@ -1,4 +1,4 @@
-.slick-prev, .slick-next {
+.slick-prev, .slick-next, .btn-heart {
     div {
         max-width: 30px;
         svg {
@@ -7,9 +7,22 @@
             width: 100%;
             padding: 10px;
             background-color: white;
-            opacity: 0.8;
+            opacity: 0.9;
+            transition: transform 0.5s;
+            &:hover {
+                opacity: 1;
+                transform: scale(1.05);
+            }
         }
     }   
+}
+
+.btn-heart {
+    div {
+        svg {
+            width: 105%;
+        }
+    }
 }
 
 li.slick-active {
@@ -34,7 +47,7 @@ li.slick-active {
         border-radius: 50%;
         padding: 4px;
         height: 4px;
-        margin-right: 8px;
+        margin-right: 0.5rem;
         &:focus {
             outline: none;
         }
@@ -42,6 +55,6 @@ li.slick-active {
 }
 
 .slick-slider {
-    touch-action: auto;
-    -ms-touch-action: auto;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
 }

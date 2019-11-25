@@ -9911,11 +9911,26 @@ small {
   position: relative;
 }
 
-.container-card-places .card-places .slick-prev, .container-card-places .card-places .slick-next {
+.container-card-places .card-places:hover .slick-prev, .container-card-places .card-places:hover .slick-next, .container-card-places .card-places:hover .btn-heart {
+  opacity: 1;
+}
+
+.container-card-places .card-places .slick-prev, .container-card-places .card-places .slick-next, .container-card-places .card-places .btn-heart {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
   position: absolute;
+  z-index: 2;
+}
+
+.container-card-places .card-places .slick-prev, .container-card-places .card-places .slick-next {
   top: 25%;
   bottom: 25%;
-  z-index: 2;
+}
+
+.container-card-places .card-places .btn-heart {
+  top: 10px;
+  right: 10px;
 }
 
 .container-card-places .card-places .slick-prev {
@@ -9929,9 +9944,42 @@ small {
 .container-card-places .card-places .slick-dots {
   position: absolute;
   bottom: 0;
-  left: 15%;
-  right: 15%;
+  left: 25%;
+  right: 25%;
   z-index: 2;
+}
+
+@media (min-width: 1200px) {
+  .container-card-places .card-places .slick-dots {
+    left: 20%;
+    right: 20%;
+  }
+}
+
+.container-card-places .card-places .card-places-image-container {
+  border-radius: 3px;
+}
+
+.container-card-places .card-places .card-places-image-container.slick-container {
+  height: 220px;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .container-card-places .card-places .card-places-image-container.slick-container {
+    max-height: 170px;
+  }
+}
+
+.container-card-places .card-places .card-places-image-container.slick-container img {
+  width: 100%;
+  height: 220px;
+}
+
+@media (min-width: 1200px) {
+  .container-card-places .card-places .card-places-image-container.slick-container img {
+    height: 170px;
+  }
 }
 
 .container-card-places .card-places .card-places-image-container img {
@@ -9952,7 +10000,8 @@ small {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.8rem;
-  padding: 0rem 0.1rem;
+  padding-left: 0.3rem;
+  padding-right: 0.1rem;
 }
 
 .container-card-places .card-places .card-body-places .superhost > span {
@@ -10345,17 +10394,31 @@ footer .copyright {
   color: #767676;
 }
 
-.slick-prev div, .slick-next div {
+.slick-prev div, .slick-next div, .btn-heart div {
   max-width: 30px;
 }
 
-.slick-prev div svg, .slick-next div svg {
+.slick-prev div svg, .slick-next div svg, .btn-heart div svg {
   border: none;
   border-radius: 100px;
   width: 100%;
   padding: 10px;
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.9;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.slick-prev div svg:hover, .slick-next div svg:hover, .btn-heart div svg:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.btn-heart div svg {
+  width: 105%;
 }
 
 li.slick-active button {
@@ -10377,7 +10440,7 @@ li.slick-active button {
   border-radius: 50%;
   padding: 4px;
   height: 4px;
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 .slick-dots button:focus {
@@ -10385,7 +10448,7 @@ li.slick-active button {
 }
 
 .slick-slider {
-  touch-action: auto;
-  -ms-touch-action: auto;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
 }
 /*# sourceMappingURL=main.css.map */
