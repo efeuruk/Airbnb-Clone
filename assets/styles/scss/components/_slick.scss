@@ -1,0 +1,47 @@
+.slick-prev, .slick-next {
+    div {
+        max-width: 30px;
+        svg {
+            border: none;
+            border-radius: 100px;
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            opacity: 0.8;
+        }
+    }   
+}
+
+li.slick-active {
+    button {
+        opacity: 1;
+        padding: 5px;
+        height: 5px;
+    }
+}
+
+.slick-dots {
+    li {
+        font-size: 0;
+        text-decoration: none;
+        display: inline-block;
+    }
+    // Eğer bunu li nin içine alırsam yukarıdaki active classı importantsız çalışmıyor
+    button {
+        background-color: white;
+        opacity: 0.8;
+        border: none;
+        border-radius: 50%;
+        padding: 4px;
+        height: 4px;
+        margin-right: 8px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.slick-slider {
+    touch-action: auto;
+    -ms-touch-action: auto;
+}

@@ -102,6 +102,26 @@
     }
     .card-places {
         border: none;
+        position: relative;
+        .slick-prev, .slick-next {
+            position: absolute;
+            top: 25%;
+            bottom: 25%;
+            z-index: 2;
+        }
+        .slick-prev {
+            left: 10px;
+        }
+        .slick-next {
+            right: 10px;
+        }
+        .slick-dots {
+            position: absolute;
+            bottom: 0;
+            left: 15%;
+            right: 15%;
+            z-index: 2;
+        }
         .card-places-image-container {
             img {
                 width: 100%;
@@ -128,8 +148,6 @@
         }
         
     }
-
-    
 
 }
 
@@ -299,6 +317,9 @@
         .card-body-places {
             position: relative;
             margin-left: 10px;
+            .left-truncate {
+                width: 75%;
+            }
             .star {
                 position: absolute;
                 top: 20px;
@@ -329,6 +350,14 @@
         div {        
             &:nth-child(5), &:nth-child(6) {
                 display: block;
+            }
+        }
+        
+        &.container-card-stay {
+            div {
+                &:nth-child(n+5) {
+                    display: none;
+                }
             }
         }
     }
@@ -397,6 +426,17 @@
         div {        
             &:nth-child(n+6) {
                 display: block;
+            }
+        }
+        &.container-card-stay {
+            .col-xxl {
+                min-width: 250px;
+                
+            }
+            div {
+                &:nth-child(n+5) {
+                    display: block;
+                }
             }
         }
     }

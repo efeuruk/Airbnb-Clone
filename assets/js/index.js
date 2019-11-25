@@ -8,3 +8,11 @@ function toggleNavbar() {
         navbarContent.style.height = "100%";
     }
 }
+
+$(document).ready(function() {
+    $('.slick-container').slick({
+        dots: true,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next'),
+    });
+});

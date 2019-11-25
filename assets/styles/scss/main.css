@@ -9376,6 +9376,7 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
 
 .container-banner .zoom img {
   width: 100%;
+  height: 100%;
   -webkit-transition: -webkit-transform .5s ease;
   transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
@@ -9907,6 +9908,30 @@ small {
 
 .container-card-places .card-places {
   border: none;
+  position: relative;
+}
+
+.container-card-places .card-places .slick-prev, .container-card-places .card-places .slick-next {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  z-index: 2;
+}
+
+.container-card-places .card-places .slick-prev {
+  left: 10px;
+}
+
+.container-card-places .card-places .slick-next {
+  right: 10px;
+}
+
+.container-card-places .card-places .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+  z-index: 2;
 }
 
 .container-card-places .card-places .card-places-image-container img {
@@ -10108,6 +10133,9 @@ small {
     position: relative;
     margin-left: 10px;
   }
+  .container-card-places .card-body-places .left-truncate {
+    width: 75%;
+  }
   .container-card-places .card-body-places .star {
     position: absolute;
     top: 20px;
@@ -10124,6 +10152,9 @@ small {
   }
   .container-card-places div:nth-child(5), .container-card-places div:nth-child(6) {
     display: block;
+  }
+  .container-card-places.container-card-stay div:nth-child(n+5) {
+    display: none;
   }
   .container-card-dates {
     display: block;
@@ -10167,6 +10198,12 @@ small {
     margin-left: 10px;
   }
   .container-card-places div:nth-child(n+6) {
+    display: block;
+  }
+  .container-card-places.container-card-stay .col-xxl {
+    min-width: 250px;
+  }
+  .container-card-places.container-card-stay div:nth-child(n+5) {
     display: block;
   }
 }
@@ -10306,5 +10343,49 @@ footer .container-social .social-list .social-link {
 
 footer .copyright {
   color: #767676;
+}
+
+.slick-prev div, .slick-next div {
+  max-width: 30px;
+}
+
+.slick-prev div svg, .slick-next div svg {
+  border: none;
+  border-radius: 100px;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+li.slick-active button {
+  opacity: 1;
+  padding: 5px;
+  height: 5px;
+}
+
+.slick-dots li {
+  font-size: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.slick-dots button {
+  background-color: white;
+  opacity: 0.8;
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  height: 4px;
+  margin-right: 8px;
+}
+
+.slick-dots button:focus {
+  outline: none;
+}
+
+.slick-slider {
+  touch-action: auto;
+  -ms-touch-action: auto;
 }
 /*# sourceMappingURL=main.css.map */
