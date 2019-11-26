@@ -17,6 +17,15 @@
     }   
 }
 
+.slick-next-card, .slick-prev-card {
+    div {
+        border-radius: 100px;
+        svg {
+            opacity: 1;
+        }
+    }
+}
+
 .btn-heart {
     div {
         svg {
@@ -52,9 +61,4 @@ li.slick-active {
             outline: none;
         }
     }
-}
-
-.slick-slider {
-    touch-action: pan-y;
-    -ms-touch-action: pan-y;
 }

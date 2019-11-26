@@ -9304,6 +9304,8 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
   padding: 25px 20px;
   min-width: 250px;
   margin-left: -20px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-homes .container-searchbar .search-bar::-webkit-input-placeholder {
@@ -9817,6 +9819,11 @@ small {
   overflow-y: hidden;
 }
 
+.container-card-explore {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .container-card-explore .card-explore {
   border-radius: 10px;
   margin-right: 15px;
@@ -10105,6 +10112,73 @@ small {
   font-size: 14px;
 }
 
+.container-card-travel .slick-prev-card, .container-card-travel .slick-next-card {
+  visibility: hidden;
+}
+
+.container-card-travel .card-travel {
+  width: 160px;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.container-card-travel .card-travel .container-card-image {
+  overflow: hidden;
+  min-height: 80px;
+}
+
+.container-card-travel .card-travel .container-card-image img {
+  width: 100%;
+}
+
+.container-card-travel .card-travel .card-body-travel h5 {
+  font-size: 0.9rem;
+}
+
+.container-card-travel .card-travel .card-body-travel p {
+  font-size: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .container-card-travel {
+    position: relative;
+  }
+  .container-card-travel .card-travel {
+    position: relative;
+    margin-right: 20px;
+    min-width: 200px;
+  }
+  .container-card-travel .card-travel .container-card-image {
+    height: 80px;
+    width: 120px;
+  }
+  .container-card-travel .card-travel .card-body-travel {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    min-height: 120px;
+  }
+  .container-card-travel .card-travel .card-body-travel h5 {
+    font-size: 1rem;
+  }
+  .container-card-travel .card-travel .card-body-travel p {
+    font-size: 0.8rem;
+  }
+  .container-card-travel .slick-prev-card, .container-card-travel .slick-next-card {
+    visibility: visible;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+  }
+  .container-card-travel .slick-prev-card {
+    left: -10px;
+    z-index: 2;
+  }
+  .container-card-travel .slick-next-card {
+    right: 0;
+  }
+}
+
 .container-fixed-bar {
   position: fixed;
   bottom: 0;
@@ -10231,10 +10305,6 @@ small {
     position: absolute;
     left: 120px;
     top: 15px;
-  }
-  .container-card-explore .card-explore .card-body-explore.card-body-travel {
-    height: 300px;
-    min-width: 325px;
   }
   .container-card-explore img {
     border-top-right-radius: 0;
@@ -10417,6 +10487,14 @@ footer .copyright {
           transform: scale(1.05);
 }
 
+.slick-next-card div, .slick-prev-card div {
+  border-radius: 100px;
+}
+
+.slick-next-card div svg, .slick-prev-card div svg {
+  opacity: 1;
+}
+
 .btn-heart div svg {
   width: 105%;
 }
@@ -10445,10 +10523,5 @@ li.slick-active button {
 
 .slick-dots button:focus {
   outline: none;
-}
-
-.slick-slider {
-  touch-action: pan-y;
-  -ms-touch-action: pan-y;
 }
 /*# sourceMappingURL=main.css.map */
