@@ -9888,6 +9888,10 @@ small {
   font-size: 0.8rem;
 }
 
+.container-card-recommended .slick-prev-card, .container-card-recommended .slick-next-card {
+  visibility: hidden;
+}
+
 .container-card-recommended .card-recommended {
   position: relative;
   color: white;
@@ -9898,6 +9902,8 @@ small {
 
 .container-card-recommended .card-recommended .card-recommended-image-container img {
   width: 100%;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 .container-card-recommended .card-recommended h3 {
@@ -9909,7 +9915,7 @@ small {
   font-size: 0.9rem;
   font-weight: 700;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
 }
 
 .container-card-places div:nth-child(n+5) {
@@ -10180,6 +10186,9 @@ small {
   .container-card-travel .slick-next-card {
     right: 0;
   }
+  .container-card-travel .slick-disabled {
+    visibility: hidden;
+  }
 }
 
 .container-fixed-bar {
@@ -10255,6 +10264,29 @@ small {
   .container-card-advantures > div:nth-child(n+4) {
     display: none;
   }
+  .container-card-recommended {
+    position: relative;
+  }
+  .container-card-recommended .slick-prev-card, .container-card-recommended .slick-next-card {
+    visibility: visible;
+    position: absolute;
+    top: 40%;
+    bottom: 10%;
+  }
+  .container-card-recommended .slick-prev-card {
+    left: -10px;
+    z-index: 2;
+  }
+  .container-card-recommended .slick-next-card {
+    right: 0;
+  }
+  .container-card-recommended .slick-disabled {
+    visibility: hidden;
+  }
+  .container-card-recommended .card-recommended .card-body-recommended {
+    left: 20px;
+    right: 20px;
+  }
   .container-card-places .card-body-places {
     position: relative;
     margin-left: 10px;
@@ -10274,7 +10306,7 @@ small {
     display: block;
   }
   .container-card-recommended .card-recommended .card-body-recommended {
-    margin-left: 40px;
+    left: 40px;
   }
   .container-card-places div:nth-child(5), .container-card-places div:nth-child(6) {
     display: block;
@@ -10317,7 +10349,8 @@ small {
     display: block;
   }
   .container-card-recommended .card-recommended .card-body-recommended {
-    margin-left: 10px;
+    left: 40px;
+    right: 40px;
   }
   .container-card-places div:nth-child(n+6) {
     display: block;

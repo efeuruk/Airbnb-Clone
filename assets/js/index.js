@@ -16,6 +16,9 @@ $(document).ready(function() {
         infinite: false,
         slidesToShow: 2,
         mobileFirst: true,
+        speed: 300,
+        prevArrow: $('.slick-prev-card'),
+        nextArrow: $('.slick-next-card'),
         responsive: [
             {
                 breakpoint: 767,
@@ -38,6 +41,7 @@ $(document).ready(function() {
         slidesToShow: 2,
         draggable: true,
         mobileFirst: true,
+        speed: 300,
         prevArrow: $('.slick-prev-card'),
         nextArrow: $('.slick-next-card'),
         responsive: [
@@ -62,8 +66,7 @@ $(document).ready(function() {
             dots: true,
             mobileFirst: true,
             arrows: true,
-            swipeToSlide: true,
-            touchMove: true,
+            speed: 300,
             prevArrow: slickInduvidual.siblings('.slick-prev'),
             nextArrow: slickInduvidual.siblings('.slick-next'),
         });
