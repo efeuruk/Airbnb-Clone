@@ -17,8 +17,8 @@ $(document).ready(function() {
         slidesToShow: 2,
         mobileFirst: true,
         speed: 300,
-        prevArrow: $('.slick-prev-card'),
-        nextArrow: $('.slick-next-card'),
+        prevArrow: $('.container-card-recommended .slick-prev-card'),
+        nextArrow: $('.container-card-recommended .slick-next-card'),
         responsive: [
             {
                 breakpoint: 767,
@@ -33,6 +33,29 @@ $(document).ready(function() {
                 }
             }
         ],
+    });
+    $('.slick-container-card-featured').slick({
+        infinite: false,
+        slidesToShow: 1,
+        mobileFirst: true,
+        speed: 300,
+        prevArrow: $('.container-card-featured .slick-prev-card'),
+        nextArrow: $('.container-card-featured .slick-next-card'),
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 1439,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ],
+
     });
     
     // Homes

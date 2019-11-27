@@ -10025,8 +10025,13 @@ small {
   top: auto;
 }
 
+.container-card-featured .slick-prev-card, .container-card-featured .slick-next-card {
+  visibility: hidden;
+}
+
 .container-card-featured .card-featured {
   border: none;
+  margin-right: 10px;
 }
 
 .container-card-featured .card-featured .card-featured-image-container {
@@ -10184,7 +10189,7 @@ small {
     z-index: 2;
   }
   .container-card-travel .slick-next-card {
-    right: 0;
+    right: -10px;
   }
   .container-card-travel .slick-disabled {
     visibility: hidden;
@@ -10298,6 +10303,25 @@ small {
     position: absolute;
     top: 20px;
     right: 20px;
+  }
+  .container-card-featured {
+    position: relative;
+  }
+  .container-card-featured .slick-prev-card, .container-card-featured .slick-next-card {
+    visibility: visible;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+  }
+  .container-card-featured .slick-prev-card {
+    left: -10px;
+    z-index: 2;
+  }
+  .container-card-featured .slick-next-card {
+    right: -10px;
+  }
+  .container-card-featured .slick-disabled {
+    visibility: hidden;
   }
 }
 

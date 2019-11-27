@@ -192,8 +192,12 @@
 }
 
 .container-card-featured {
+    .slick-prev-card, .slick-next-card {
+        visibility: hidden;
+    }
    .card-featured {
        border: none;
+       margin-right: 10px;  
        .card-featured-image-container {
            position: relative;
            text-align: center;
@@ -343,7 +347,7 @@
             z-index: 2;
         }
         .slick-next-card {
-            right: 0;
+            right: -10px;
         }
         .slick-disabled {
             visibility: hidden;
@@ -461,6 +465,26 @@
                 top: 20px;
                 right: 20px;
             }
+        }
+    }
+
+    .container-card-featured {
+        position: relative;
+        .slick-prev-card, .slick-next-card {
+            visibility: visible;
+            position: absolute;
+            top: 25%;
+            bottom: 25%;
+        }
+        .slick-prev-card {
+            left: -10px;
+            z-index: 2;
+        }
+        .slick-next-card {
+            right: -10px;
+        }
+        .slick-disabled {
+            visibility: hidden;
         }
     }
 
