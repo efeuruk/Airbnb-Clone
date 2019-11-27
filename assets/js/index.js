@@ -17,6 +17,7 @@ $(document).ready(function() {
         slidesToShow: 2,
         mobileFirst: true,
         speed: 300,
+        accessibility: false,
         prevArrow: $('.container-card-recommended .slick-prev-card'),
         nextArrow: $('.container-card-recommended .slick-next-card'),
         responsive: [
@@ -39,6 +40,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         mobileFirst: true,
         speed: 300,
+        accessibility: false,
         prevArrow: $('.container-card-featured .slick-prev-card'),
         nextArrow: $('.container-card-featured .slick-next-card'),
         responsive: [
@@ -65,6 +67,7 @@ $(document).ready(function() {
         draggable: true,
         mobileFirst: true,
         speed: 300,
+        accessibility: false,
         prevArrow: $('.slick-prev-card'),
         nextArrow: $('.slick-next-card'),
         responsive: [
@@ -90,8 +93,26 @@ $(document).ready(function() {
             mobileFirst: true,
             arrows: true,
             speed: 300,
+            accessibility: false,
             prevArrow: slickInduvidual.siblings('.slick-prev'),
             nextArrow: slickInduvidual.siblings('.slick-next'),
         });
+    });
+
+    // Footer
+    let isOpen = false;
+    $('.terms').click(function() {
+        if (isOpen===false) {
+            isOpen = true;
+            $('.footer-toggle').css("display", "block");
+            $('.terms .shadow span').text("Close");
+            $('.terms .shadow img').attr("src", "./assets/img/homepage/svgs/close-btn.svg");
+        }
+        else {
+            isOpen = false;
+            $('.footer-toggle').css("display", "none");
+            $('.terms .shadow span').text("Terms, Privacy & More");
+            $('.terms .shadow img').attr("src", "./assets/img/homepage/svgs/info.svg");
+        }
     });
 });

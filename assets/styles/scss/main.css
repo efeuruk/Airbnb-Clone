@@ -9229,7 +9229,7 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
     position: fixed;
     top: 94vh;
     right: 20px;
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
   }
   .header-index .terms span {
@@ -9237,6 +9237,15 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
     background-color: white;
     padding: 10px;
   }
+}
+
+@media (min-width: 768px) and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-index .terms {
+    left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
   .section-animals .container-video img {
     display: none;
   }
@@ -10031,7 +10040,7 @@ small {
 
 .container-card-featured .card-featured {
   border: none;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .container-card-featured .card-featured .card-featured-image-container {
@@ -10189,7 +10198,7 @@ small {
     z-index: 2;
   }
   .container-card-travel .slick-next-card {
-    right: -10px;
+    right: 5px;
   }
   .container-card-travel .slick-disabled {
     visibility: hidden;
@@ -10469,7 +10478,7 @@ small {
 
 footer {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 footer .footer-title {
@@ -10522,6 +10531,22 @@ footer .container-social .social-list .social-link {
 
 footer .copyright {
   color: #767676;
+}
+
+footer .footer-toggle {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  footer.footer-toggle {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px solid gray;
+    padding-top: 30px;
+    z-index: 2;
+  }
 }
 
 .slick-prev div, .slick-next div, .btn-heart div {

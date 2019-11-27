@@ -1,6 +1,6 @@
 footer {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     .footer-title {
         margin-left: 15px;
         margin-bottom: 10px;
@@ -47,10 +47,24 @@ footer {
         }
     }
     
-
-    
-    
     .copyright {
         color: $boulder;
+    }
+
+    .footer-toggle {
+        display: block;
+    }
+
+    @include media-breakpoint-up(md) {
+        &.footer-toggle {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            background-color: white;
+            border-top: 1px solid gray;
+            padding-top: 30px;
+            z-index: 2;
+        }
+        
     }
 }

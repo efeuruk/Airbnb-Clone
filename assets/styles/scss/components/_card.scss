@@ -197,7 +197,7 @@
     }
    .card-featured {
        border: none;
-       margin-right: 10px;  
+       margin-right: 15px;  
        .card-featured-image-container {
            position: relative;
            text-align: center;
@@ -347,7 +347,7 @@
             z-index: 2;
         }
         .slick-next-card {
-            right: -10px;
+            right: 5px;
         }
         .slick-disabled {
             visibility: hidden;

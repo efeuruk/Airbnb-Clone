@@ -202,12 +202,15 @@
             position: fixed;
             top: 94vh;
             right: 20px;
-            z-index: 2;
+            z-index: 3;
             cursor: pointer;
             span {
                 border-radius: 10px;
                 background-color: white;
                 padding: 10px;
+            }
+            @include media-breakpoint-between(md, lg) {
+                left: 20px;
             }
         }
     }
