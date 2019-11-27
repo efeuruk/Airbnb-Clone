@@ -11,6 +11,27 @@ function toggleNavbar() {
 
 $(document).ready(function() {
     // Slick
+    // Index
+    $('.slick-container-card-recommended').slick({
+        infinite: false,
+        slidesToShow: 2,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1439,
+                settings: {
+                    slidesToShow: 5
+                }
+            }
+        ],
+    });
+    
     // Homes
     $('.slick-container-card-travel').slick({
         infinite: false,
@@ -31,19 +52,12 @@ $(document).ready(function() {
                 settings: {
                     slidesToShow: 4
                 }
-            },
-            {
-                breakpoint: 1439,
-                settings: {
-                    slidesToShow: 4
-                }
             }
         ],
     });
     
     $('.slick-container').each(function(){
-        $('.slick-slide').bind('touchstart', function(){ console.log('touchstart') })
-        var slickInduvidual = $(this);
+        let slickInduvidual = $(this);
         slickInduvidual.slick({
             dots: true,
             mobileFirst: true,

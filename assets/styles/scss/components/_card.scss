@@ -75,6 +75,8 @@
         position: relative;
         color: white;
         text-align: center;
+        width: 20px;
+        margin-right: 10px;
         
         .card-recommended-image-container {
             img {
@@ -85,12 +87,12 @@
         h3 {
             font-size: 1.1rem;
         }
-        .card-body-recommended {           
+        .card-body-recommended {
+            max-width: 200px;         
             font-size: 0.9rem;
             font-weight: 700;
             position: absolute;
             bottom: 10px;
-            
         }
    }
 }
