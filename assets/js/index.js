@@ -99,6 +99,21 @@ $(document).ready(function() {
         });
     });
 
+    // Video - Play, Pause
+    let isPlay = true;
+    $('.button-play').click(function() {
+        if (isPlay===true) {
+            isPlay = false;
+            $('video').get(0).pause();
+            $('.button-play i').removeClass('fas fa-pause').addClass('fas fa-play');
+        }
+        else {
+            isPlay = true;
+            $('video').get(0).play();
+            $('.button-play i').removeClass('fas fa-play').addClass('fas fa-pause');
+        }
+    });
+
     // Footer
     let isOpen = false;
     $('.terms').click(function() {

@@ -9158,6 +9158,10 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
   display: none;
 }
 
+.section-animals .container-video .button-play-container {
+  display: none;
+}
+
 .section-animals .container-video video {
   display: none;
 }
@@ -9264,6 +9268,21 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
   .section-animals .container-video .content-video a {
     position: relative;
     z-index: 1;
+  }
+  .section-animals .container-video .button-play-container {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    z-index: 1;
+  }
+  .section-animals .container-video .button-play-container .button-play {
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+  .section-animals .container-video .button-play-container .button-play:focus {
+    outline: none;
   }
   .section-animals .container-video video {
     display: block;
