@@ -5,5 +5,5 @@ $(document).ready(function() {
     });
     $('.hide').click(function() {
         $('.show').show();
-    })
+    });
 });

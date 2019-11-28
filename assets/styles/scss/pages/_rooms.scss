@@ -1,11 +1,50 @@
 .container-banner {
-    height: 440px;
+    position: relative;
     overflow: hidden;
+    max-height: 450px;
+    .slick-container-banner {
+        img {
+            width: 100%;
+            max-height: 250px;
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        margin-left: -90px;
+    }
+
+    .upload, .heart, .show-photos {
+        position: absolute;
+        z-index: 2;
+        svg {
+            width: 25px;
+        }
+    }
+    .heart {
+        right: 20px;
+        top: 30px;
+    }
+    .upload {
+        right: 60px;
+        top: 25px;
+    }
+}
+
+.container-banner-mobile {
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.container-banner-desktop {
+    border-bottom: 2px solid black;
     .zoom {
         border: 2px solid black;
         img {
             width: 100%;
-            height: 100%;
+            height: 460px;
             transition: transform .5s ease;
             &:hover {
                 transform: scale(1.1);
@@ -20,8 +59,38 @@
             height: 220px;
         }
     }
-}
 
+    .upload, .heart, .show-photos {
+        display: flex;
+        border-radius: 5px;
+        padding: 5px 14px;
+        background-color: white;
+        text-decoration: none;
+        svg {
+            width: 15px;
+        }
+        span {
+            color: $tundora;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+    .upload {
+        right: 120px;
+    }
+    .heart {
+        right: 20px;
+        top: 25px;
+    }
+    .show-photos {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    @include media-breakpoint-between(xs, sm) {
+        display: none;
+    }
+}
 
 .main-rooms {
     display: flex;

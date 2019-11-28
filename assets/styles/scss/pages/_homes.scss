@@ -19,12 +19,15 @@
     
         .search-bar {
             padding: 25px 20px;
-            min-width: 250px;
+            width: 200px;
             margin-left: -20px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             &::placeholder {
                 visibility: hidden;
                 font-weight: 900;
+            }
+            &:focus {
+                outline: none;
             }
         }
     }

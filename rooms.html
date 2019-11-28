@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/styles/scss/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+     <!--Slick-->
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <header class="header-index header-homes">
@@ -150,39 +152,77 @@
             </nav>
     </header>
     <main>
-        <div class="row no-gutters container-banner">
-            <div class="col-6 zoom">
+        <!--Geçiçi çözüm buraya dönücem-->
+        <div class="container-banner container-banner-mobile">
+            <a class="upload" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="2.25" focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;"><g fill-rule="evenodd" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"><path d="m11.5 16v-15" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"></path><path d="m7.5 4 4-3 4 3" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"></path><path d="m5.4 9.5h-3.9v14h20v-14h-3.1" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"></path></g></svg>
+            </a>
+            <a class="heart" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="#ffffff" stroke-width="2.25" focusable="false" aria-label="Save this listing." role="img" stroke-linecap="round" stroke-linejoin="round" style="display: block; overflow: visible;"><path d="m17.5 2.9c-2.1 0-4.1 1.3-5.4 2.8-1.6-1.6-3.8-3.2-6.2-2.7-1.5.2-2.9 1.2-3.6 2.6-2.3 4.1 1 8.3 3.9 11.1 1.4 1.3 2.8 2.5 4.3 3.6.4.3 1.1.9 1.6.9s1.2-.6 1.6-.9c3.2-2.3 6.6-5.1 8.2-8.8 1.5-3.4 0-8.6-4.4-8.6" stroke-linejoin="round" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"></path></svg>
+            </a>
+            <div class="slick-container-banner">
                 <a href="#">
                     <img src="./assets/img/rooms/banner/1.jpg" alt="">
                 </a>
+                <a href="#">
+                    <img src="./assets/img/rooms/banner/2.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/rooms/banner/3.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/rooms/banner/4.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/rooms/banner/5.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        
+        <div class="row no-gutters container-banner container-banner-desktop">
+            <a class="upload" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="2.25" focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;"><g fill-rule="evenodd" stroke="#484848" fill="#484848" stroke-width="2.25px"><path d="m11.5 16v-15" stroke="#484848" fill="#484848" stroke-width="2.25px"></path><path d="m7.5 4 4-3 4 3" stroke="#484848" fill="#484848" stroke-width="2.25px"></path><path d="m5.4 9.5h-3.9v14h20v-14h-3.1" stroke="#484848" fill="#484848" stroke-width="2.25px"></path></g></svg>
+                <span>Share</span>
+            </a>
+            <a class="heart" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="#484848" stroke-width="2.25" focusable="false" aria-label="Save this listing." role="img" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;"><path d="m17.5 2.9c-2.1 0-4.1 1.3-5.4 2.8-1.6-1.6-3.8-3.2-6.2-2.7-1.5.2-2.9 1.2-3.6 2.6-2.3 4.1 1 8.3 3.9 11.1 1.4 1.3 2.8 2.5 4.3 3.6.4.3 1.1.9 1.6.9s1.2-.6 1.6-.9c3.2-2.3 6.6-5.1 8.2-8.8 1.5-3.4 0-8.6-4.4-8.6" stroke-linejoin="round" stroke="#484848" fill="#484848" stroke-width="2.25px"></path></svg>
+                <span>Save</span>
+            </a>
+            <a class="show-photos" href="#">
+                <span>Show photos</span>
+            </a>
+            <div class="col-6 zoom">
+                <div style="overflow: hidden;">
+                    <a href="#">
+                        <img src="./assets/img/rooms/banner/1.jpg" alt="">
+                    </a>
+                </div>
             </div>
             <div class="col-6">
-                <div class="row no-gutters">
-                    <div class="col-6 zoom right">
-                        <a href="#">
-                            <img src="./assets/img/rooms/banner/2.jpg" alt=""> 
-                        </a>
-                        
+                <div class="row">
+                    <div class="col-md-12 col-xl-6">
+                        <div class="row zoom right">
+                            <a href="#">
+                                <img src="./assets/img/rooms/banner/2.jpg" alt=""> 
+                            </a>   
+                        </div>
+                        <div class="row zoom right">
+                            <a href="#">
+                                <img src="./assets/img/rooms/banner/3.jpg" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-6 zoom right">
-                        <a href="#">
-                            <img src="./assets/img/rooms/banner/4.jpg" alt="">
-                        </a>
-                        
-                    </div>
-                </div>
-                <div class="row no-gutters">
-                    <div class="col-6 zoom right">
-                        <a href="#">
-                            <img src="./assets/img/rooms/banner/3.jpg" alt="">
-                        </a>
-                        
-                    </div>
-                    <div class="col-6 zoom right">
-                        <a href="#">
-                            <img src="./assets/img/rooms/banner/5.jpg" alt="">
-                        </a>
-                        
+                    <div class="d-md-none d-xl-inline col-xl-6">
+                        <div class="row zoom right">
+                            <a href="#">
+                                <img src="./assets/img/rooms/banner/4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="row zoom right">
+                            <a href="#">
+                                <img src="./assets/img/rooms/banner/5.jpg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -854,13 +894,17 @@
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/rooms.js"></script>
+    <!--Slick-->
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

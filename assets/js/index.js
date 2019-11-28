@@ -10,7 +10,7 @@ function toggleNavbar() {
 }
 
 $(document).ready(function() {
-    // Slick
+    // -------------------------------------------------Slick------------------------------------------
     // Index
     $('.slick-container-card-recommended').slick({
         infinite: false,
@@ -35,6 +35,7 @@ $(document).ready(function() {
             }
         ],
     });
+    
     $('.slick-container-card-featured').slick({
         infinite: false,
         slidesToShow: 1,
@@ -85,7 +86,8 @@ $(document).ready(function() {
             }
         ],
     });
-    
+
+
     $('.slick-container').each(function(){
         let slickInduvidual = $(this);
         slickInduvidual.slick({
@@ -99,6 +101,35 @@ $(document).ready(function() {
         });
     });
 
+    // Rooms
+    $('.slick-container-banner').not('.slick-initialized').slick({
+        dots: true,
+        mobileFirst: true,
+        slidesToShow: 1,
+        prevArrow: false,
+        nextArrow: false,
+        dots: true,
+        speed: 300,
+    });
+
+    // To preserve slick when screen size gets smaller
+    $(window).resize(function()  {
+        ($(window).width() < 768) ? 
+        $('.slick-container-banner').not('.slick-initialized').slick({
+            dots: true,
+            mobileFirst: true,
+            slidesToShow: 1,
+            prevArrow: false,
+            nextArrow: false,
+            dots: true,
+            speed: 300,
+        }) :
+        $('.slick-container-banner').not('.slick-initialized').slick('unslick'); 
+    });
+
+    // --------------------------------------------SLICK END------------------------------------------
+
+    // General Page js events
     // Video - Play, Pause
     let isPlay = true;
     $('.button-play').click(function() {
@@ -111,6 +142,37 @@ $(document).ready(function() {
             isPlay = true;
             $('video').get(0).play();
             $('.button-play i').removeClass('fas fa-play').addClass('fas fa-pause');
+        }
+    });
+    
+    // Tabbar show, hide when scroll
+    let lastScrollTop = 0;
+    $(window).scroll(function() {
+        if ($(window).width() < 768) {
+            let currentScrollTop = $(this).scrollTop();
+            if (currentScrollTop > lastScrollTop) {
+                $('.section-fixed-navigation-bar').slideUp(200);
+            }
+            else {
+                $('.section-fixed-navigation-bar').slideDown(200); 
+            }
+            lastScrollTop = currentScrollTop;
+        }
+        else {
+            $('.section-fixed-navigation-bar').css("display", "none");
+        }
+    });
+
+    // Searchbar animate
+    let searchBarExpand = false;
+    $('.search-bar').click(function() {
+        if (searchBarExpand === false) {
+            searchBarExpand = true;
+            $('.search-bar').animate({width: '600px'}, 500);
+        }
+        else {
+            searchBarExpand = false;
+            $('.search-bar').animate({width: '200px'}, 500);
         }
     });
 

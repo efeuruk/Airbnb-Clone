@@ -157,6 +157,10 @@
     }
 }
 
+.fixed-navigation {
+    position: fixed;
+}
+
 @include media-breakpoint-up(sm) {
     .header-index {
         background-size: 100% 50%;
