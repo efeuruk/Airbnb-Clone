@@ -9379,6 +9379,7 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
   top: 0;
   left: 0;
   z-index: 3;
+  min-height: 150px;
 }
 
 @media (min-width: 768px) {
@@ -10362,6 +10363,8 @@ small {
   left: 0;
   width: 100%;
   margin-bottom: 0;
+  max-height: 70px;
+  z-index: 2;
 }
 
 .section-fixed-navigation-bar .card-fixed-navigation-bar {
@@ -10518,6 +10521,24 @@ small {
   }
   .container-card-dates .card-dates .card-body-dates {
     width: 380px;
+  }
+  .container-card-dates .card-dates .card-body-dates .card-dates-hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container-card-dates .link-report {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #767676;
+    margin-top: 20px;
   }
   .container-fixed-bar {
     display: none;

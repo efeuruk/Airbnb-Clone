@@ -392,6 +392,9 @@
     left: 0;
     width: 100%;
     margin-bottom: 0;
+    max-height: 70px;
+    // Slick dotsların üstünde gösterebilmek için
+    z-index: 2;
     .card-fixed-navigation-bar {
         border-radius: 0;
         .card-body-fixed-navigation-bar {
@@ -565,7 +568,17 @@
         .card-dates {
             .card-body-dates {
                 width: 380px;
+                .card-dates-hidden {
+                    display: flex;
+                    justify-content: space-between;
+                }
             }
+        }
+        .link-report {
+            display: flex; 
+            justify-content: center;
+            color: $boulder;
+            margin-top: 20px;
         }
     }
 

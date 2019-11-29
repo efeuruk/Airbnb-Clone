@@ -151,14 +151,20 @@ $(document).ready(function() {
         if ($(window).width() < 768) {
             let currentScrollTop = $(this).scrollTop();
             if (currentScrollTop > lastScrollTop) {
-                $('.section-fixed-navigation-bar').slideUp(200);
+                // When scroll down
+                $('.section-fixed-navigation-bar').slideUp(300);
+                $('.hidden-fiters').slideUp(300);
             }
             else {
-                $('.section-fixed-navigation-bar').slideDown(200); 
+                // When scroll up
+                $('.section-fixed-navigation-bar').slideDown(300);
+                $('.hidden-fiters').slideDown(300);
             }
             lastScrollTop = currentScrollTop;
         }
-        else {
+        // If I wrote that without else if, like just else it won't be seen in the mobile
+        // when the page first seen
+        else if ($(window).width() > 768) {
             $('.section-fixed-navigation-bar').css("display", "none");
         }
     });
