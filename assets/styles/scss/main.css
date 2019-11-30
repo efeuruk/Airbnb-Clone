@@ -8895,7 +8895,7 @@ section {
   color: #767676;
 }
 
-textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
+textarea:focus, input:focus, input[type]:focus {
   border-color: #008489;
   outline: 0 none;
 }
@@ -9102,20 +9102,6 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
   width: 100%;
 }
 
-.header-index .card-search .dropdown-guest {
-  border: 1px solid #EBEBEB;
-}
-
-.header-index .card-search .dropdown-guest .btn-guest:after {
-  position: absolute;
-  right: 10px;
-  top: 18px;
-}
-
-.header-index .card-search .dropdown-guest .btn-guest-menu {
-  width: 100%;
-}
-
 .header-index .oregon {
   display: none;
 }
@@ -9210,7 +9196,7 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
     position: absolute;
     max-width: 28rem;
     top: 100px;
-    left: 150px;
+    left: 100px;
     padding: 1.5rem;
   }
   .header-index .card-search .button-primary {
@@ -9512,6 +9498,10 @@ textarea:focus, input:focus, input[type]:focus, .dropdown-guest:focus {
   right: 20px;
 }
 
+.container-banner-desktop .show-photos span {
+  margin-left: -1px;
+}
+
 @media (max-width: 767.98px) {
   .container-banner-desktop {
     display: none;
@@ -9637,6 +9627,12 @@ small {
     top: 70px;
     right: 10px;
     display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-overview .row-profile-pic {
+    margin-bottom: -20px;
   }
 }
 
@@ -9894,6 +9890,89 @@ small {
 
 .button-secondary:hover {
   background-color: #ffffff;
+}
+
+.dropdown-guest {
+  border: 1px solid #dddcdc;
+}
+
+.dropdown-guest .btn-guest {
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-guest .btn-guest:after {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.dropdown-guest .btn-guest:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 2px solid #007bff;
+}
+
+.dropdown-guest .btn-guest-menu {
+  width: 100%;
+  position: relative;
+}
+
+.dropdown-guest .btn-guest-menu .dropdown-item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.dropdown-guest .btn-guest-menu .dropdown-item-text span {
+  color: #484848;
+  font-weight: 500;
+}
+
+.dropdown-guest .btn-guest-menu .dropdown-item-text .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+
+.dropdown-guest .btn-guest-menu .dropdown-item-text .buttons span {
+  margin-left: 20px;
+  margin-right: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.dropdown-guest .btn-guest-menu .dropdown-item-text .buttons button {
+  color: #484848;
+  border-radius: 50%;
+  border: 1px solid #008489;
+  background-color: white;
+  max-width: 40px;
+  max-height: 25px;
+}
+
+.dropdown-guest .btn-guest-menu .close-btn {
+  margin-left: 75%;
+}
+
+.dropdown-guest .btn-guest-menu .close-btn .link-close {
+  color: #008489;
+}
+
+.dropdown-guest .btn-guest-menu .close-btn .link-close:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .button-filter {
@@ -10522,6 +10601,45 @@ small {
   .container-card-dates .card-dates .card-body-dates {
     width: 380px;
   }
+  .container-card-dates .card-dates .card-body-dates .form-card-dates {
+    line-height: 1.5rem;
+  }
+  .container-card-dates .card-dates .card-body-dates .form-card-dates .input-dates {
+    border: 1px solid #dddcdc;
+    border-radius: 3px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container-card-dates .card-dates .card-body-dates .form-card-dates .input-dates input {
+    -ms-flex-preferred-size: 2;
+        flex-basis: 2;
+    border: none;
+    height: 100%;
+    font-size: 16px;
+  }
+  .container-card-dates .card-dates .card-body-dates .form-card-dates .input-dates input:focus {
+    background-color: #99ede6;
+  }
+  .container-card-dates .card-dates .card-body-dates .form-card-dates .input-dates svg {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 40px;
+  }
+  .container-card-dates .card-dates .card-body-dates .form-card-dates label {
+    font-size: 12 px;
+    font-weight: 600;
+    color: #484848;
+  }
   .container-card-dates .card-dates .card-body-dates .card-dates-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10538,7 +10656,7 @@ small {
         -ms-flex-pack: center;
             justify-content: center;
     color: #767676;
-    margin-top: 20px;
+    font-size: 14px;
   }
   .container-fixed-bar {
     display: none;

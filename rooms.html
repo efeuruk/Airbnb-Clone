@@ -681,7 +681,7 @@
                 </section>
                 <!--End of Location-->
 
-                <section class="section-policies">
+                <section class="section-policies mb-0">
                     <h2>Things to keep in mind</h2>
                     <div class="my-3">
                         <span>
@@ -739,25 +739,78 @@
                                 <span class="boulder">(564 reviews)</span>
                             </div>
                             <hr>
-                            <form action="">
+                            <form class="form-card-dates" action="">
                                 <div class="form-group">
                                     <label for="dates">Dates</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <div class="input-dates">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check-in">
+                                        <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="fill: currentcolor;"><path d="m0 12.5a.5.5 0 0 0 .5.5h21.79l-6.15 6.15a.5.5 0 1 0 .71.71l7-7v-.01a.5.5 0 0 0 .14-.35.5.5 0 0 0 -.14-.35v-.01l-7-7a .5.5 0 0 0 -.71.71l6.15 6.15h-21.79a.5.5 0 0 0 -.5.5z" fill-rule="evenodd"></path></svg>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Checkout">
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="dates">Guests</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                </div>
+                                        <label for="guests">Guests</label>
+                                        <div class="dropdown dropdown-guest">
+                                            <button class="btn dropdown-toggle btn-guest" type="button" id="dropdownMenuButton"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="boulder">Guests</span>
+                                            </button>
+                                            <div class="dropdown-menu btn-guest-menu" aria-labelledby="dropdownMenuButton">
+                                                <div class="dropdown-item-text">
+                                                    <div>
+                                                        <span>Adults</span>
+                                                    </div>
+                                                    
+                                                    <div class="buttons">
+                                                        <button>-</button>
+                                                        <span>1</span>
+                                                        <button>+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <div>
+                                                        <span>Chideren</span>
+                                                        <p>Ages 2-12</p>
+                                                    </div>
+                                                    
+                                                    <div class="buttons">
+                                                        <button>-</button>
+                                                        <span>0</span>
+                                                        <button>+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <div>
+                                                        <span>Infants</span>
+                                                        <p>Under 2</p>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <button>-</button>
+                                                        <span>0</span>
+                                                        <button>+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item-text">
+                                                    <p>
+                                                        2 guests maximum. Infants don’t count toward the number of guests.
+                                                    </p>
+                                                </div>
+                                                <div class="dropdown-item-text close-btn">
+                                                    <a class="link-close">Close</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 <button type="submit" class="btn btn-primary button button-primary w-100">Reserve</button>
-                                <div class="text-center small tundora mt-2 mb-n1">
-                                    <span>You won't be charged yet.</span>
+                                <div class="text-center small boulder mt-2 mb-n1">
+                                    <span>You won't be charged yet</span>
                                 </div>
                             </form>
                             <div class="card-dates-hidden">
                                 <div>
                                     <hr>
-                                    <span>This place is getting a lot of attention.</span>
-                                    <span>It's benn wiewed 500+ times in the past week.</span>
+                                    <span class="font-weight-bold">This place is getting a lot of attention.</span>
+                                    <span>It's been viewed 500+ times in the past week.</span>
                                 </div>
                                 <div>
                                     <hr>
@@ -794,122 +847,122 @@
     </main>
     
     <footer class="container-footer" style="margin-bottom: 80px;">
-                <div class="row justify-content-between">
-                    <ul class="nav flex-column">
-                        <li class="nav-item footer-title">
-                            Airbnb
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Careers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Policies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Help</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Diversity & Belonging</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Accessibility
-                                <span class="new">New</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Company Details</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">UK Modern Slavery Act</a>
-                        </li>
-                    </ul>
-        
-                    <ul class="nav flex-column">
-                        <li class="nav-item footer-title">
-                            Discover
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Trust & Safety</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Travel Credit</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Airbnb Citizen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Business Travel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Things To Do
-                                <span class="new">New</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Airbnbmag</a>
-                        </li>
-                    </ul>
-        
-                    <ul class="nav flex-column">
-                        <li class="nav-item footer-title">
-                            Hosting
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Why Host</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hospitality</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Responsible Hosting</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Community Centre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Host an Experience
-                                <span class="new">New</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Open Homes</a>
-                        </li>
-                    </ul>
-        
-                    <ul class="nav flex-column container-social">
-                        <li class="nav-item social-list">
-                            <a class="social-link" href="#">
-                                <img src="./assets/img/homepage/footer/facebook.svg" alt="facebook" width="25px">
-                            </a>
-                            <a class="social-link" href="#">
-                                <img src="./assets/img/homepage/footer/twitter.svg" alt="twitter" width="25px">
-                            </a>
-                            <a href="#">
-                                <img src="./assets/img/homepage/footer/instagram.svg" alt="instagram" width="25px">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Terms</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Site Map</a>
-                        </li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="row">
-                    <img src="./assets/img/homepage/footer/logo.svg" alt="" width="25px">
-                    <span class="ml-2 copyright">© 2019 Airbnb, Inc. All rights reserved.</span>
-                </div>
+        <div class="row justify-content-between">
+            <ul class="nav flex-column">
+                <li class="nav-item footer-title">
+                    Airbnb
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Policies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Diversity & Belonging</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Accessibility
+                        <span class="new">New</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Company Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">UK Modern Slavery Act</a>
+                </li>
+            </ul>
+
+            <ul class="nav flex-column">
+                <li class="nav-item footer-title">
+                    Discover
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trust & Safety</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Travel Credit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Airbnb Citizen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Business Travel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Things To Do
+                        <span class="new">New</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Airbnbmag</a>
+                </li>
+            </ul>
+
+            <ul class="nav flex-column">
+                <li class="nav-item footer-title">
+                    Hosting
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Why Host</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hospitality</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Responsible Hosting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Community Centre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Host an Experience
+                        <span class="new">New</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Open Homes</a>
+                </li>
+            </ul>
+
+            <ul class="nav flex-column container-social">
+                <li class="nav-item social-list">
+                    <a class="social-link" href="#">
+                        <img src="./assets/img/homepage/footer/facebook.svg" alt="facebook" width="25px">
+                    </a>
+                    <a class="social-link" href="#">
+                        <img src="./assets/img/homepage/footer/twitter.svg" alt="twitter" width="25px">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/homepage/footer/instagram.svg" alt="instagram" width="25px">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Site Map</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="row">
+            <img src="./assets/img/homepage/footer/logo.svg" alt="" width="25px">
+            <span class="ml-2 copyright">© 2019 Airbnb, Inc. All rights reserved.</span>
+        </div>
     </footer>
 
 

@@ -85,6 +85,9 @@
     .show-photos {
         bottom: 20px;
         right: 20px;
+        span {
+            margin-left: -1px;
+        }
     }
 
     @include media-breakpoint-between(xs, sm) {
@@ -184,6 +187,10 @@ small {
                     display: block;
                 }
             }
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: -20px;
         }
     }
 

@@ -15,13 +15,18 @@ $(document).ready(function() {
             console.log("Aşağı");
             $('.link-report').css({
                 'position': 'sticky',
-                'top': '500px'
+                'top': '520px'
             });
-            $('.card-dates-hidden').slideDown(500).css("display", "flex");
+            $('.card-dates-hidden').slideDown(300).css("display", "flex");
+            $('.card-dates').css("margin-bottom", "100px");
         }
         else if (currentScrollTop < 800) {
            console.log("Yukarı");
-           $('.card-dates-hidden').slideUp(500);
+           $('.card-dates-hidden').slideUp(300);
         }
+    });
+
+    $('.close-btn a').click(function() {
+        $('btn-guest-menu').hide();
     });
 });

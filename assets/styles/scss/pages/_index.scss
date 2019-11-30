@@ -77,20 +77,7 @@
             width: 100%;
         }
 
-        .dropdown-guest {
-            border: 1px solid #EBEBEB;
-            .btn-guest {
-                &:after {
-                    position: absolute;
-                    right: 10px;
-                    top: 18px;
-                }
-            }
-            .btn-guest-menu {
-                width: 100%;
-            }
-            
-        }
+        
     }
 
     .oregon {
@@ -178,7 +165,7 @@
             max-width: 28rem;
             // Her ekranda headera göre ortalanması için
             top: 100px;
-            left: 150px;
+            left: 100px;
             padding: 1.5rem;
 
             .button-primary {

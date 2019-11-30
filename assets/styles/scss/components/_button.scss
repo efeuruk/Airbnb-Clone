@@ -23,6 +23,68 @@
     }
 }
 
+// Dropdowns
+.dropdown-guest {
+    border: 1px solid rgb(221, 220, 220);
+    .btn-guest {
+        width: 100%;
+        text-align: left;
+        &:after {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
+        &:focus {
+            box-shadow: none;
+            outline: 2px solid #007bff;
+        }
+    }
+    .btn-guest-menu {
+        width: 100%;
+        position: relative;
+        .dropdown-item-text {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            span {
+                color: $tundora;
+                font-weight: 500;
+            }
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                align-self: start;
+                span {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    align-self: center;
+                }
+                button {
+                    color: $tundora;
+                    border-radius: 50%;
+                    border: 1px solid $teal;
+                    background-color: white;
+                    max-width: 40px;
+                    max-height: 25px;
+                }
+            }
+        }
+        
+        .close-btn {
+            margin-left: 75%;
+            .link-close {
+                color: $teal;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
+
 // 2. Sayfadaki filtre buttonları
 .button-filter {
     color: #222222;
