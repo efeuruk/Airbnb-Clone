@@ -10006,6 +10006,10 @@ small {
   padding: 4px 4px;
 }
 
+.button-pagination.big {
+  padding: 15px 20px;
+}
+
 .scrollable-card {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -10669,6 +10673,8 @@ small {
     height: 85px;
     min-width: 200px;
     margin-right: 20px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
   .container-card-explore .card-explore .container-card-image {
     width: 125px;

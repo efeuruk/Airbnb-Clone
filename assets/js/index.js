@@ -170,16 +170,12 @@ $(document).ready(function() {
     });
 
     // Searchbar animate
-    let searchBarExpand = false;
     $('.search-bar').click(function() {
-        if (searchBarExpand === false) {
-            searchBarExpand = true;
-            $('.search-bar').animate({width: '600px'}, 500);
-        }
-        else {
-            searchBarExpand = false;
-            $('.search-bar').animate({width: '200px'}, 500);
-        }
+        $('.search-bar').animate({width: '600px'}, 500).addClass('shadow')
+    });
+
+    $('.search-bar').blur(function() {
+        $('.search-bar').animate({width: '200px'}, 800).removeClass('shadow');
     });
 
     // Footer
