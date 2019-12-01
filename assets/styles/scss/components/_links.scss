@@ -54,6 +54,17 @@
     }
 }
 
+.link-read-more {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    color: $teal !important;
+    &:hover {
+        text-decoration: underline !important;
+        cursor: pointer;
+    }
+} 
+
 @include media-breakpoint-up(md) {
     .main-link, .secondary-link {
         font-size: 1.1rem;

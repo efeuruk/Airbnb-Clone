@@ -279,7 +279,7 @@
     .card-dates {
         position: -webkit-sticky;
         position: sticky;
-        top: 20px;
+        top: 80px;
         .card-body-dates {
             .card-dates-rating-container {
                 font-size: 14px;
@@ -611,8 +611,8 @@
             display: flex; 
             justify-content: center;
             color: $boulder;
-            
             font-size: 14px;
+            position: sticky;
         }
     }
 

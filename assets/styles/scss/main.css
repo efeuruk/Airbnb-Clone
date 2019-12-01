@@ -9819,17 +9819,6 @@ small {
   color: #767676;
 }
 
-.section-reviews .comment p {
-  display: block;
-  display: -webkit-box;
-  max-width: 560px;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.43rem;
-}
-
 .section-reviews .pagination {
   width: 250px;
   background-color: transparent;
@@ -10382,7 +10371,7 @@ small {
 .container-card-dates .card-dates {
   position: -webkit-sticky;
   position: sticky;
-  top: 20px;
+  top: 80px;
 }
 
 .container-card-dates .card-dates .card-body-dates .card-dates-rating-container {
@@ -10722,6 +10711,8 @@ small {
             justify-content: center;
     color: #767676;
     font-size: 14px;
+    position: -webkit-sticky;
+    position: sticky;
   }
   .container-fixed-bar {
     display: none;
@@ -10825,6 +10816,18 @@ small {
 
 .link-collapse:hover {
   color: #008489;
+}
+
+.link-read-more {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  color: #008489 !important;
+}
+
+.link-read-more:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

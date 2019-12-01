@@ -343,19 +343,6 @@ small {
                 color: $boulder;
             }
         }
-
-        p {
-            display: block;
-            display: -webkit-box;
-            max-width: 560px;
-            -webkit-line-clamp: 5;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 1.43rem;
-        }
-
-        
     }
     
     .pagination {
