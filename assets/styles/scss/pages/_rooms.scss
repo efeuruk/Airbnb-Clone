@@ -1,3 +1,52 @@
+#navigation-links {
+    // I had to use !important because it didn't disappear otherwise
+    display: none !important;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 60px;
+    z-index: 3;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    display: flex;
+    .scroll-spy-nav {
+        width: 70%;
+        margin-left: -10px;
+        li {
+            margin-top: 5px;
+            margin-right: -5px;
+            margin-left: -5px;
+            a {
+                color: $teal;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .navigation-buttons {
+        width: 40%;
+        margin-right: -10px;
+        .upload-link, .heart-link {
+            margin-top: -35px;
+            a {
+                color: $tundora;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .upload-link {
+            margin-right: 10px;
+            margin-left: -8px;
+        }
+        svg {
+            width: 20px;
+            margin-right: 3px;
+        }
+    }
+}
+
 .container-banner {
     position: relative;
     overflow: hidden;

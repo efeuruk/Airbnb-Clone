@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="assets/styles/scss/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-     <!--Slick-->
-     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
 </head>
-<body>
+<body class="position-relative" data-spy="scroll" data-target="#navigation-links" data-offset="530">
     <header class="header-index header-homes">
         <nav class="container-fluid nav-main navbar navbar-expand-xl">
             <div class="col-md-4">
@@ -152,7 +153,6 @@
             </nav>
     </header>
     <main>
-        <!--Geçiçi çözüm buraya dönücem-->
         <div class="container-banner container-banner-mobile">
             <a class="upload" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="2.25" focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;"><g fill-rule="evenodd" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"><path d="m11.5 16v-15" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"></path><path d="m7.5 4 4-3 4 3" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"></path><path d="m5.4 9.5h-3.9v14h20v-14h-3.1" stroke="#ffffff" fill="#ffffff" stroke-width="2.25px"></path></g></svg>
@@ -228,9 +228,46 @@
             </div>
         </div>
         
+        <nav id="navigation-links">
+           <ul class="nav container-rooms scroll-spy-nav">
+               <li class="nav-item">
+                    <a class="nav-link" href="#section-overview">Overview ·</a> 
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="#section-reviews">Reviews ·</a>
+                    
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="#section-host">The Host ·</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="#section-location">Location ·</a>
+                     
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="#section-policies">Policies</a>
+               </li>
+           </ul>
+           <ul class="nav container-rooms navigation-buttons">
+                <li class="upload-link">
+                    <a class="upload" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="2.25" focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;"><g fill-rule="evenodd" stroke="#484848" fill="#484848" stroke-width="2.25px"><path d="m11.5 16v-15" stroke="#484848" fill="#484848" stroke-width="2.25px"></path><path d="m7.5 4 4-3 4 3" stroke="#484848" fill="#484848" stroke-width="2.25px"></path><path d="m5.4 9.5h-3.9v14h20v-14h-3.1" stroke="#484848" fill="#484848" stroke-width="2.25px"></path></g></svg>
+                        <span>Share</span>
+                    </a>
+                </li>
+                <li class="heart-link">
+                    <a class="heart" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0" stroke="#484848" stroke-width="2.25" focusable="false" aria-label="Save this listing." role="img" stroke-linecap="round" stroke-linejoin="round" style="overflow: visible;"><path d="m17.5 2.9c-2.1 0-4.1 1.3-5.4 2.8-1.6-1.6-3.8-3.2-6.2-2.7-1.5.2-2.9 1.2-3.6 2.6-2.3 4.1 1 8.3 3.9 11.1 1.4 1.3 2.8 2.5 4.3 3.6.4.3 1.1.9 1.6.9s1.2-.6 1.6-.9c3.2-2.3 6.6-5.1 8.2-8.8 1.5-3.4 0-8.6-4.4-8.6" stroke-linejoin="round" stroke="#484848" fill="#484848" stroke-width="2.25px"></path></svg>
+                        <span>Save</span>
+                    </a>
+                </li>
+                
+           </ul>
+        </nav>
+
         <div class="container-rooms main-rooms">
             <article>
-                <section class="section-overview">
+                <section class="section-overview" id="section-overview">
                     <h1 class="tundora h2 mt-4">Underground Hygge</h1>
                     <div class="row-profile-pic">
                         <a href="#">Orondo</a>
@@ -354,7 +391,7 @@
                 </section>
                 <!--End of Overview-->
                 
-                <section class="section-reviews">
+                <section class="section-reviews mb-5" id="section-reviews">
                     <h2>Reviews</h2>
                     <div class="row">
                         <div class="col container-rating">
@@ -611,7 +648,7 @@
                 </section>
                 <!--End of Reviews-->
 
-                <section class="section-host">
+                <section class="section-host mb-5" id="section-host">
                     <div class="d-flex justify-content-between">
                         <div>
                             <h2>Hosted by Kristie</h2>
@@ -665,7 +702,7 @@
                 </section>
                 <!--End of Host-->
 
-                <section class="section-location">
+                <section class="section-location mb-5" id="section-location">
                     <h2>The neighbourhood</h2>
                     <p class="mt-3">Kristie’s place is located in Orondo , Washington, United States.</p>
                     <p>The majority of your neighbors will be deer, rabbits, birds & grouse. It's 2 miles up the mountain and although there are houses it gets more remote the closer you get to the hobbit hole.</p>
@@ -681,7 +718,7 @@
                 </section>
                 <!--End of Location-->
 
-                <section class="section-policies mb-0">
+                <section class="section-policies mb-0" id="section-policies">
                     <h2>Things to keep in mind</h2>
                     <div class="my-3">
                         <span>

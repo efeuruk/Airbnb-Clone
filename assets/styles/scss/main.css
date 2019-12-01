@@ -8865,12 +8865,12 @@ p {
   color: #484848;
 }
 
-section {
+.container-section {
   margin-bottom: 3rem;
 }
 
 @media (min-width: 576px) {
-  section {
+  .container-section {
     margin-bottom: 5.93rem;
   }
 }
@@ -9388,6 +9388,67 @@ textarea:focus, input:focus, input[type]:focus {
   .list-filter {
     padding-left: 80px;
   }
+}
+
+#navigation-links {
+  display: none !important;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: white;
+  height: 60px;
+  z-index: 3;
+  border-bottom: 1px solid #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navigation-links .scroll-spy-nav {
+  width: 70%;
+  margin-left: -10px;
+}
+
+#navigation-links .scroll-spy-nav li {
+  margin-top: 5px;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+#navigation-links .scroll-spy-nav li a {
+  color: #008489;
+}
+
+#navigation-links .scroll-spy-nav li a:hover {
+  text-decoration: underline;
+}
+
+#navigation-links .navigation-buttons {
+  width: 40%;
+  margin-right: -10px;
+}
+
+#navigation-links .navigation-buttons .upload-link, #navigation-links .navigation-buttons .heart-link {
+  margin-top: -35px;
+}
+
+#navigation-links .navigation-buttons .upload-link a, #navigation-links .navigation-buttons .heart-link a {
+  color: #484848;
+}
+
+#navigation-links .navigation-buttons .upload-link a:hover, #navigation-links .navigation-buttons .heart-link a:hover {
+  text-decoration: none;
+}
+
+#navigation-links .navigation-buttons .upload-link {
+  margin-right: 10px;
+  margin-left: -8px;
+}
+
+#navigation-links .navigation-buttons svg {
+  width: 20px;
+  margin-right: 3px;
 }
 
 .container-banner {
