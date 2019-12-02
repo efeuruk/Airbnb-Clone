@@ -97,6 +97,10 @@
             font-weight: 700;
             position: absolute;
             bottom: 5px;
+            left: 50%;
+            right: 50%;
+            margin-left: -90px;
+            margin-right: -90px;
         }
    }
 }
@@ -483,12 +487,6 @@
         .slick-disabled {
             visibility: hidden;
         }
-        .card-recommended {
-            .card-body-recommended {
-                left: 20px;
-                right: 20px;
-            }
-        }   
     }
 
     .container-card-places {
@@ -534,14 +532,6 @@
         >div {
             &:nth-child(4) {
                 display: block;
-            }
-        }
-    }
-
-    .container-card-recommended {
-        .card-recommended {
-            .card-body-recommended {
-                left: 40px;
             }
         }
     }
@@ -651,15 +641,6 @@
         >div {
             &:nth-child(n+4) {
                 display: block;
-            }
-        }
-    }
-
-    .container-card-recommended {
-        .card-recommended {
-            .card-body-recommended {
-                left: 40px;
-                right: 40px;
             }
         }
     }

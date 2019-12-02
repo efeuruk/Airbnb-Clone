@@ -87,6 +87,11 @@
     }
 }
 
+// Filter container-banner-desktop images
+.filter-image {
+    filter: brightness(60%);
+}
+
 .container-banner-desktop {
     border-bottom: 2px solid black;
     .zoom {

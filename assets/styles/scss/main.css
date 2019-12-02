@@ -8865,12 +8865,12 @@ p {
   color: #484848;
 }
 
-.container-section {
+.container-section, .section-animals {
   margin-bottom: 3rem;
 }
 
 @media (min-width: 576px) {
-  .container-section {
+  .container-section, .section-animals {
     margin-bottom: 5.93rem;
   }
 }
@@ -9492,6 +9492,11 @@ textarea:focus, input:focus, input[type]:focus {
   .container-banner-mobile {
     display: none;
   }
+}
+
+.filter-image {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .container-banner-desktop {
@@ -10168,6 +10173,10 @@ small {
   font-weight: 700;
   position: absolute;
   bottom: 5px;
+  left: 50%;
+  right: 50%;
+  margin-left: -90px;
+  margin-right: -90px;
 }
 
 .container-card-places div:nth-child(n+5) {
@@ -10598,10 +10607,6 @@ small {
   .container-card-recommended .slick-disabled {
     visibility: hidden;
   }
-  .container-card-recommended .card-recommended .card-body-recommended {
-    left: 20px;
-    right: 20px;
-  }
   .container-card-places .card-body-places {
     position: relative;
     margin-left: 10px;
@@ -10638,9 +10643,6 @@ small {
 @media (min-width: 1200px) {
   .container-card-advantures > div:nth-child(4) {
     display: block;
-  }
-  .container-card-recommended .card-recommended .card-body-recommended {
-    left: 40px;
   }
   .container-card-places div:nth-child(5), .container-card-places div:nth-child(6) {
     display: block;
@@ -10742,10 +10744,6 @@ small {
   }
   .container-card-advantures > div:nth-child(n+4) {
     display: block;
-  }
-  .container-card-recommended .card-recommended .card-body-recommended {
-    left: 40px;
-    right: 40px;
   }
   .container-card-places div:nth-child(n+6) {
     display: block;
