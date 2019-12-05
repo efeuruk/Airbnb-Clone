@@ -1,7 +1,7 @@
 # Airbnb-Clone
 This repository is a copy of some pages (fully responsive) of Airbnb web page.
 
-I used SCSS, Bootstrap, JQuery.
+I used Webpack, SCSS, Bootstrap, JQuery.
 
 Here are the links to actual pages: 
 
