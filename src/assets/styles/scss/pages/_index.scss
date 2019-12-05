@@ -1,0 +1,283 @@
+.header-index {
+    height: 70vh;
+    background-image: url('../../img/homepage/banner-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+
+    .container-banner {
+        height: 100vh;
+        img {
+            width: 100%;
+        }
+    }
+
+    .navbar-content {
+        // Collapse cotnenti için
+        z-index: 4;
+    }
+
+    .overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: white;
+        overflow-y: hidden;
+        overflow: scroll;
+        transition: 0.5s;
+
+        .overlay-content {
+            position: relative;
+            width: 100%;
+            text-align: left;
+            font-size: 1rem;
+            a {
+                color: rgb(72, 72, 72);
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-size: 14px;
+                    margin-top: -25px;
+                }
+            }
+
+            ul {
+                margin-top: 50px;
+                line-height: 3rem;
+                margin-bottom: 50px;
+            }
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+          }
+    }
+
+
+    .card-search {
+        border: none;
+        position: absolute;
+        top: 220px;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+
+        h1 {
+            color: white;
+            position: absolute;
+            bottom: 350px;
+        }
+
+        .button-primary {
+            width: 100%;
+        }
+
+        
+    }
+
+    .oregon {
+        display: none;
+    }
+
+    .terms {
+        display: none;
+    }
+}
+
+.section-animals {
+    .container-video {
+        position: relative;
+        width: auto;
+        img {
+            width: 100%;
+        }
+        display: flex;
+        justify-content: center;
+        .content-video {
+            position: absolute;
+            text-align: center;
+            margin-top: 30px;
+            .container-animals-image {
+                width: 250px;
+                .image-animals {
+                    width: 100%;
+                    display: block;
+                }
+                .video-animals {
+                    display: none;
+                }
+            }
+        }
+
+        .button-play-container {
+            display: none;
+        }
+
+        video {
+            display: none;
+        }
+    }
+}
+
+.section-advantures {
+    overflow-x: hidden;
+}
+
+.section-plus {
+    .banner-plus {
+        border: none;
+        background-image: url('../../img/homepage/plus/plus-background-large.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 300px;
+        .content-banner-plus {
+            width: 200px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.fixed-navigation {
+    position: fixed;
+}
+
+@include media-breakpoint-up(sm) {
+    .header-index {
+        background-size: 100% 50%;
+    }
+}
+
+// Tablet, desktop
+@include media-breakpoint-up(md) {
+    .header-index {
+        height: 100vh;
+        background-size: 100% 100%;
+        position: relative;
+        .card-search {
+            position: absolute;
+            max-width: 28rem;
+            // Her ekranda headera göre ortalanması için
+            top: 100px;
+            left: 100px;
+            padding: 1.5rem;
+
+            .button-primary {
+                width: auto;
+                float: right;
+            }
+
+            h1 {
+                position: static;
+                color: $tundora;
+            }
+
+        }
+
+        .oregon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 180px;
+            display: block;
+            text-align: right;
+            a {
+                color: #ffffff;
+            }
+        }
+
+        .terms {
+            display: block;
+            position: fixed;
+            top: 94vh;
+            right: 20px;
+            z-index: 3;
+            cursor: pointer;
+            span {
+                border-radius: 10px;
+                background-color: white;
+                padding: 10px;
+            }
+            @include media-breakpoint-between(md, lg) {
+                left: 20px;
+            }
+        }
+    }
+
+    .section-animals {
+        .container-video {
+            img {
+                display: none;
+            }
+            .content-video {
+                top: 50px;
+                left: 50px;
+                text-align: left;
+
+                .container-animals-image {
+                    .image-animals {
+                        display: none;
+                    }
+    
+                    .video-animals {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                
+                a {
+                    position: relative;
+                    z-index: 1;
+                }
+                
+            }
+
+            .button-play-container {
+                display: block;
+                position: absolute;
+                bottom: 10px;
+                right: 20px;
+                z-index: 1;
+                .button-play {
+                    border: none;
+                    background-color: transparent;
+                    color: white;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            
+            video {
+                display: block;
+                width: 100%; 
+            }
+        }
+    }
+
+    .section-plus {
+        .banner-plus {
+            background-image: url('../../img/homepage/plus/plus-background.jpg');
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    // xxl de container alması için bu componenta özel container
+    // koydum
+    .section-animals {
+        @include make-container(190px);
+        video {
+            border-radius: 20px;
+        }
+    }
+}
+
+
+
