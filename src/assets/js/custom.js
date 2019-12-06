@@ -5,7 +5,6 @@ import video from '../img/homepage/video/video.mp4';
 
 // Bütün navbarlar için kullanılan mobildeki collapse menü için yazılan fonksiyon
 function toggleNavbar() {
-    console.log("Hop")
     const navbarContent = document.getElementsByClassName("navbar-content")[0];
     if (navbarContent.style.height == "100%") {
         navbarContent.style.height = "0";
@@ -17,8 +16,100 @@ function toggleNavbar() {
 window.toggleNavbar = toggleNavbar;
 
 $(document).ready(function() {
-    // Video push to dom
+    // Search card
+    
+    // Initilize Datepicker
+    $(function() {
+        let $startDate = $('.start-date');
+        let $endDate = $('.end-date');
+  
+        $startDate.datepicker({
+          autoHide: true,
+        });
+        $endDate.datepicker({
+          autoHide: true,
+          startDate: $startDate.datepicker('getDate'),
+        });
+  
+        $startDate.on('change', function () {
+          $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+        });
+    });
+
+    // Guest Dropdown
+    
+    // Prevent closing
+    $(document).on('click', '.dropdown-guest .dropdown-menu', function (e) {
+        e.stopPropagation();
+      });
+    
+    // Increment and decrement values in guest dropdown
+    let quantityArray = [];
+
+    $('.btn-minus').each(function(index) {
+        quantityArray.push({quantity: 0});
+        $(this).on('click', function() {
+            let quantity = quantityArray[index].quantity;
+            let quantityElement = $(this).next();
+            if(quantity > 0) {
+                quantity = quantity - 1;
+                quantityArray[index].quantity = quantity;
+            }
+            quantityElement.text(quantity);
+        })
+    });
+
+    $('.btn-plus').each(function(index) {     
+        $(this).on('click', function() {
+            let quantity = quantityArray[index].quantity;
+            let quantityElement = $(this).prev();
+            quantity = quantity + 1;
+            quantityArray[index].quantity = quantity;
+            quantityElement.text(quantity);
+        })
+    });
+
+    // Form submit
+    let submitObj = {
+        where: '',
+        startDate: '',
+        endDate: '',
+        adult: 0,
+        childeren: 0,
+        infants: 0
+    }
+
+    $('.btn-search').click(function() {
+        if ($('#where').val() === "" || $('.start-date').val() === ""
+        || $('.end-date').val() === "") {
+            console.log("Please enter whole inputs");
+        }
+        else {
+            submitObj.where = $('#where').val();
+            submitObj.startDate = $('.start-date').val();
+            submitObj.endDate = $('.end-date').val();
+            $('.btn-minus').next().each(function(index) {
+                if (index == 0) {
+                    submitObj.adult = parseInt($(this).html());
+                }
+                else if (index == 1) {
+                    submitObj.childeren = parseInt($(this).html());
+                }
+                else {
+                    submitObj.infants = parseInt($(this).html());
+                }
+            });
+            console.log(submitObj);
+        }
+    });
+
+    $('.form-card-dates').click(function(event) {
+        event.preventDefault();
+    });
+
+    // Video's src push to dom
     $('.card-image').attr("src", video);
+    
     // -------------------------------------------------Slick------------------------------------------
     // Index
     $('.slick-container-card-recommended').slick({

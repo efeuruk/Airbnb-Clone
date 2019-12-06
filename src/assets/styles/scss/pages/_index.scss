@@ -56,6 +56,14 @@
             right: 45px;
             font-size: 60px;
           }
+
+          .closebtn {
+              img {
+                  &:nth-child(2) {
+                      transform: rotateX(180deg);
+                  }
+              }
+          }
     }
 
 

@@ -78,7 +78,7 @@
                         <a href="javascript:void(0)" class="closebtn" onclick="toggleNavbar()">
                             <img class="mt-3" src="./assets/img/homepage/svgs/airbnb-logo-red.svg" alt="airbnb-logo-red"
                                 width="40px">
-                            <!--Toggle Simgesi gelecek-->
+                            <img class="mt-3" src="./assets/img/homepage/svgs/down-arrow-gray.svg" alt="toggle" width="10px">
                         </a>
                         <!-- Overlay content -->
                         <div class="overlay-content">
@@ -167,11 +167,11 @@
                         <div class="row no-gutters input-dates">
                             <div class="col">
                                 <label for="check-in">CHECK-IN</label>
-                                <input type="text" class="form-control" placeholder="dd-mm-yy">
+                                <input type="text" class="form-control start-date" data-toggle="datepicker" placeholder="dd-mm-yy">
                             </div>
                             <div class="col">
                                 <label for="check-out">CHECK-OUT</label>
-                                <input type="text" class="form-control" placeholder="dd-mm-yy">
+                                <input type="text" class="form-control end-date" data-toggle="datepicker" placeholder="dd-mm-yy">
                             </div>
                         </div>
                     </div>
@@ -190,36 +190,36 @@
                                     </div>
                                     
                                     <div class="buttons">
-                                        <button>-</button>
-                                        <span>1</span>
-                                        <button>+</button>
+                                        <button class="btn-minus" type="button">-</button>
+                                        <span class="quantity">0</span>
+                                        <button class="btn-plus" type="button">+</button>
                                     </div>
                                 </div>
                                 <div class="dropdown-item-text">
                                     <div>
-                                        <span>Chideren</span>
-                                        <p>Ages 2-12</p>
+                                        <span>Childeren</span>
+                                        <p class="font-weight-light">Ages 2-12</p>
                                     </div>
                                     
                                     <div class="buttons">
-                                        <button>-</button>
-                                        <span>0</span>
-                                        <button>+</button>
+                                        <button class="btn-minus" type="button">-</button>
+                                        <span class="quantity">0</span>
+                                        <button class="btn-plus" type="button">+</button>
                                     </div>
                                 </div>
                                 <div class="dropdown-item-text">
                                     <div>
                                         <span>Infants</span>
-                                        <p>Under 2</p>
+                                        <p class="font-weight-light">Under 2</p>
                                     </div>
                                     <div class="buttons">
-                                        <button>-</button>
-                                        <span>0</span>
-                                        <button>+</button>
+                                        <button class="btn-minus" type="button">-</button>
+                                        <span class="quantity">0</span>
+                                        <button class="btn-plus" type="button">+</button>
                                     </div>
                                 </div>
                                 <div class="dropdown-item-text">
-                                    <p>
+                                    <p class="font-weight-light">
                                         2 guests maximum. Infants don’t count toward the number of guests.
                                     </p>
                                 </div>
@@ -230,7 +230,7 @@
                             
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary button button-primary">Search</button>
+                    <button type="submit" class="btn btn-primary button button-primary btn-search">Search</button>
                 </form>
             </div>
         </div>

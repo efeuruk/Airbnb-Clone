@@ -36,15 +36,6 @@ module.exports = {
         jQuery: "jquery",
         "window.jQuery": "jquery"
     }),
-    // new GoogleFontsPlugin({
-    //     fonts: [
-    //         { family: "Roboto", variants: [ 
-    //             "300", "400", "500",
-    //             "700", "900" 
-    //         ] }
-    //     ]
-    //     /* ...options */
-    // })
   ],
   module: {
     rules: [
