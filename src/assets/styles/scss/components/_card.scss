@@ -1,11 +1,3 @@
-// Mobile
-// .scrollable-card {
-//     flex-direction: row;
-//     flex-wrap: nowrap;
-//     overflow-x: scroll;
-//     overflow-y: hidden;
-// }
-
 .container-card-explore {
     display: flex;
     .card-explore {
@@ -419,7 +411,7 @@
     width: 100%;
     margin-bottom: 0;
     max-height: 70px;
-    // Slick dotsların üstünde gösterebilmek için
+    // z-index for slick dots to be seen at top
     z-index: 2;
     .card-fixed-navigation-bar {
         border-radius: 0;
@@ -458,9 +450,6 @@
     // özelleştir
     .container-card-explore {
         flex-direction: row;
-        // Explore aşağı düşmesin diye baktın (flex-wrap), 
-        // eğer recommended sıkıntı yaparsa buraya 
-        // bak
         flex-wrap: nowrap;
         overflow-x: scroll;
         overflow-y: hidden;

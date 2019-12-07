@@ -16,8 +16,10 @@ function toggleNavbar() {
 window.toggleNavbar = toggleNavbar;
 
 $(document).ready(function() {
+    // General Page js events
+
     // Search card
-    
+
     // Initilize Datepicker
     $(function() {
         let $startDate = $('.start-date');
@@ -103,12 +105,79 @@ $(document).ready(function() {
         }
     });
 
+    // Prevent form to perform regular submit event
     $('.form-card-dates').click(function(event) {
         event.preventDefault();
     });
 
     // Video's src push to dom
     $('.card-image').attr("src", video);
+
+    
+    // Video - Play, Pause
+    let isPlay = true;
+    $('.button-play').click(function() {
+        if (isPlay===true) {
+            isPlay = false;
+            $('video').get(0).pause();
+            $('.button-play i').removeClass('fas fa-pause').addClass('fas fa-play');
+        }
+        else {
+            isPlay = true;
+            $('video').get(0).play();
+            $('.button-play i').removeClass('fas fa-play').addClass('fas fa-pause');
+        }
+    });
+    
+    // Tabbar show, hide when scroll
+    let lastScrollTop = 0;
+    $(window).scroll(function() {
+        if ($(window).width() < 768) {
+            let currentScrollTop = $(this).scrollTop();
+            if (currentScrollTop > lastScrollTop) {
+                // When scroll down
+                $('.section-fixed-navigation-bar').slideUp(300);
+                $('.hidden-fiters').slideUp(300);
+            }
+            else {
+                // When scroll up
+                $('.section-fixed-navigation-bar').slideDown(300);
+                $('.hidden-fiters').slideDown(300);
+            }
+            lastScrollTop = currentScrollTop;
+        }
+        // If I wrote that without else if, like just else it won't be seen in the mobile
+        // when the page first seen
+        else if ($(window).width() > 768) {
+            $('.section-fixed-navigation-bar').css("display", "none");
+        }
+    });
+
+    // Searchbar animate
+    $('.search-bar').click(function() {
+        $('.search-bar').animate({width: '600px'}, 500).addClass('shadow')
+    });
+
+    $('.search-bar').blur(function() {
+        $('.search-bar').animate({width: '200px'}, 800).removeClass('shadow');
+    });
+
+    // Footer
+    let isOpen = false;
+    $('.terms').click(function() {
+        if (isOpen===false) {
+            isOpen = true;
+            $('.footer-toggle').css("display", "block");
+            $('.terms .shadow span').text("Close");
+            $('.terms .shadow img').attr("src", closeBtn);
+        }
+        else {
+            isOpen = false;
+            $('.footer-toggle').css("display", "none");
+            $('.terms .shadow span').text("Terms, Privacy & More");
+            $('.terms .shadow img').attr("src", infoBtn);
+        }
+    });
     
     // -------------------------------------------------Slick------------------------------------------
     // Index
@@ -228,70 +297,5 @@ $(document).ready(function() {
     });
 
     // --------------------------------------------SLICK END------------------------------------------
-
-    // General Page js events
-    // Video - Play, Pause
-    let isPlay = true;
-    $('.button-play').click(function() {
-        if (isPlay===true) {
-            isPlay = false;
-            $('video').get(0).pause();
-            $('.button-play i').removeClass('fas fa-pause').addClass('fas fa-play');
-        }
-        else {
-            isPlay = true;
-            $('video').get(0).play();
-            $('.button-play i').removeClass('fas fa-play').addClass('fas fa-pause');
-        }
-    });
     
-    // Tabbar show, hide when scroll
-    let lastScrollTop = 0;
-    $(window).scroll(function() {
-        if ($(window).width() < 768) {
-            let currentScrollTop = $(this).scrollTop();
-            if (currentScrollTop > lastScrollTop) {
-                // When scroll down
-                $('.section-fixed-navigation-bar').slideUp(300);
-                $('.hidden-fiters').slideUp(300);
-            }
-            else {
-                // When scroll up
-                $('.section-fixed-navigation-bar').slideDown(300);
-                $('.hidden-fiters').slideDown(300);
-            }
-            lastScrollTop = currentScrollTop;
-        }
-        // If I wrote that without else if, like just else it won't be seen in the mobile
-        // when the page first seen
-        else if ($(window).width() > 768) {
-            $('.section-fixed-navigation-bar').css("display", "none");
-        }
-    });
-
-    // Searchbar animate
-    $('.search-bar').click(function() {
-        $('.search-bar').animate({width: '600px'}, 500).addClass('shadow')
-    });
-
-    $('.search-bar').blur(function() {
-        $('.search-bar').animate({width: '200px'}, 800).removeClass('shadow');
-    });
-
-    // Footer
-    let isOpen = false;
-    $('.terms').click(function() {
-        if (isOpen===false) {
-            isOpen = true;
-            $('.footer-toggle').css("display", "block");
-            $('.terms .shadow span').text("Close");
-            $('.terms .shadow img').attr("src", closeBtn);
-        }
-        else {
-            isOpen = false;
-            $('.footer-toggle').css("display", "none");
-            $('.terms .shadow span').text("Terms, Privacy & More");
-            $('.terms .shadow img').attr("src", infoBtn);
-        }
-    });
 });
