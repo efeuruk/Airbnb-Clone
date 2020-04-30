@@ -39,7 +39,7 @@
     "@chenfengyuan/datepicker": "^1.0.9",
     "bootstrap": "^4.4.1",
     "dotdotdot-js": "^4.0.10",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "popper.js": "^1.16.0",
     "slick-carousel": "^1.8.1"
