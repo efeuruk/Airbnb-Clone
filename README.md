@@ -6,11 +6,23 @@ I used Webpack, SCSS, Bootstrap, JQuery.
 
 To run, consecutively:
 
-npm i
+<code>npm i</code>
 
-npm run build
+<code>npm run build</code>
 
-npm start
+<code>npm start</code>
+
+Screenshots:
+
+Home:
+
+<img src="screenshots/1.PNG">
+
+Homes:
+<img src="screenshots/2.PNG">
+
+Rooms:
+<img src="screenshots/3.PNG">
 
 Here are the links to actual pages:
 
